@@ -1,0 +1,117 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    background-color: rgb(16, 51, 116);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+button{
+    margin-left: 520px;
+    height:62;
+    padding: 0 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(16, 51, 116);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;}
+
+button:hover{background-color: 292000;}
+
+
+header span {
+    text-transform: uppercase;
+    font-size: 100px;
+    margin-left: 30px;   
+}
+
+header table {
+    max-width: 1000px;
+    max-height: 700px;
+}
+
+header summary{text-transform: uppercase;
+color: rgb(255, 206, 0);
+margin-left: 20px;}
+
+#headerra ul {
+    column-count: 2;
+    list-style-type: none;
+}
+
+#zubieta-oria {
+    color: rgb(255, 206, 0);
+}
+
+#headerra details summary:nth-child(even) {
+    display: inline;
+}
+
+#headerra nav {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.hasiera-border{
+border-style: solid;
+    border-color:rgb(255, 206, 0);
+    border-radius: 4px;
+    padding: 5px;
+
+}
+
+.norgara-border{
+    border-style: solid;
+    border-color:rgb(255, 206, 0);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.astekoegunak-border{
+    border-style: solid;
+    border-color:rgb(255, 206, 0);
+    border-radius: 4px;
+    padding: 5px;
+
+}
+
+.pelikuleiburuzko-border{
+    border-style: solid;
+    border-color:rgb(255, 206, 0);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#headerra nav a {
+    text-decoration: none;
+    color: rgb(255, 206, 0);
+}
+
+.desplegablea {
+    position: relative;
+}
+
+.menua-ezkerrean {
+    margin-left: 750px;
+    text-transform: uppercase;
+}
+
+.desplegable-menua {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: none;
+}
+
+.desplegablea:hover .desplegable-menua {
+    display: block;
+    background-color: rgb(16, 51, 116);
+}
