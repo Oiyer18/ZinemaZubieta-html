@@ -9,9 +9,13 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    height: 250px;
 }
+
 button{
-    margin-left: 520px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
     height:62;
     padding: 0 24px;
     border: none;
@@ -40,9 +44,12 @@ header summary{text-transform: uppercase;
 color: rgb(255, 206, 0);
 margin-left: 20px;}
 
-#headerra ul {
-    column-count: 2;
-    list-style-type: none;
+header summary:last-child{margin-left: 2000px;}
+
+
+
+#headerra ul:last-child{
+    padding-left: 40px;
 }
 
 #zubieta-oria {
