@@ -2,10 +2,10 @@
     font-family: sans-serif;
     color: white;
 }
-
+body {background-color: rgb(6, 31, 77);}
 header {
     background-color: rgb(16, 51, 116);
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -60,8 +60,6 @@ header summary:last-child{margin-left: 2000px;}
     padding-bottom: 10px;
     align-items: center;
 }
-
-
 
 #headerra nav a {
     text-decoration: none;
@@ -235,7 +233,3 @@ header summary:last-child{margin-left: 2000px;}
   height: 140px;
   margin-right: 31px;
 }
-
-
-
-
