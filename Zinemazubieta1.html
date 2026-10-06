@@ -1,39 +1,85 @@
 <!doctype html>
 <html lang="eu">
   <head>
-    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Zubieta Zinema</title>
   </head>
-<header id="headerra">
 
- <span>zubieta</span><span id="zubieta-oria">zinema</span>
- <button>SAIOA HASI</button>
- 
-<nav class="menua-ezkerrean">
-    <a class="hasiera-border">hasiera</a>
-    <a class="norgara-border">nor gara?</a>
-    <div class="desplegablea">
-        <a class="astekoegunak-border">asteko egunak</a>
-        <ul class="desplegable-menua"> 
-            <li><a href="asteko egunak/astelehena.html">astelehena</a></li>
-            <li><a href="asteko egunak/asteartea.html">asteartea</a></li>
-            <li><a href="asteko egunak/asteazkena.html">asteazkena</a></li>
-            <li><a href="asteko egunak/osteguna.html">osteguna</a></li>
-            <li><a href="asteko egunak/ostirala.html">ostirala</a></li>
-            <li><a href="asteko egunak/larunbata.html">larunbata</a></li>
-            <li><a href="asteko egunak/igandea.html">igandea</a></li>
-        </ul>
-    </div>
-    <a>pelikulei buruzko informazioa</a>
-    
-</nav>
+  <body>
+    <header id="headerra">
+      <div class="header-goikoa">
+        <div class="header-logo">
+          <span>Zubieta</span>
+          <span id="zubieta-oria">Zinema</span>
+        </div>
+
+        <button class="saioa-button">SAIOA HASI</button>
+      </div>
+
+      <nav class="menua-ezkerrean">
+        <a class="nabigazioa-link hasiera-border" href="#"> Hasiera </a>
+
+        <a class="nabigazioa-link norgara-border" href="#"> Nor gara? </a>
+
+        <div class="desplegablea">
+          <a class="nabigazioa-link astekoegunak-border" href="#">
+            Asteko egunak
+          </a>
+
+          <div class="desplegable-menua">
+            <a href="asteko egunak/astelehena.html">Astelehena</a>
+
+            <a href="asteko egunak/asteartea.html">Asteartea</a>
+
+            <a href="asteko egunak/asteazkena.html">Asteazkena</a>
+
+            <a href="asteko egunak/osteguna.html">Osteguna</a>
+
+            <a href="asteko egunak/ostirala.html">Ostirala</a>
+
+            <a href="asteko egunak/larunbata.html">Larunbata</a>
+
+            <a href="asteko egunak/igandea.html">Igandea</a>
+          </div>
+        </div>
+
+        <a class="nabigazioa-link pelikuleiburuzko-border" href="#">
+          Pelikulei buruzko informazioa
+        </a>
+      </nav>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <h4>PELIKULA NABARMENDUAK</h4>
+
+      <div class="carrusel-container">
+        <div class="carrusel-track">
+          <div class="carrusel-item">
+            <img src="argazkiak/bola.jpg" alt="La bola negra" />
+          </div>
+
+          <div class="carrusel-item">
+            <img src="argazkiak/sonic.jpg" alt="Sonic 3" />
+          </div>
+
+          <div class="carrusel-item">
+            <img src="imagen3.jpg" alt="Descripción de imagen 3" />
+          </div>
+        </div>
+
+        <div class="carrusel-nav">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="footer-contenido">
+        <!-- EZKERREKO ZATIA -->
 
         <div class="footer-info">
           <img
@@ -75,42 +121,15 @@
           </ul>
         </div>
 
+        <!-- ESKUINEKO ZATIA -->
 
         <div class="footer-derecha">
+          <!-- NEWSLETTER -->
 
-<footer> 
-    
-<img src="argazkiak/logo.png">
-<h4> Kontaktatu gurekin:</h4>
-<ul>
-    <li>
-        Etarte bidea, 9, 20170 Zubieta-Usurbil, Gipuzkoa
-    </li>
-    <li>
-        BEZEROEN ARRETA:
-        Astean zehar 9:00-21:00h.
-        Astebukaeran: 10:00-14:00h.
-    </li>
-    <li>
-        +34 942 23 25 26
-    </li>
-    <li>
-        kontaktua@zubietazinema.eus
-    </li>
-</ul>
-<div>
-    <p>
-        Gure newsletterrera harpideratu ezer ez galtzeko.
-    </p>
-    <form>
-  <label for="emaila">Zure email helbidea idatzi:</label>
-  <input type="text" id="emaila" name="email" placeholder="Zure email helbidea idatzi">
+          <div class="newsletter">
+            <h2>Harpidetu gure newsletter-era</h2>
 
             <form class="newsletter-form">
-              <label class="newsletter-label" for="emaila">
-                Zure email helbidea idatzi:
-              </label>
-
               <input
                 class="newsletter-input"
                 type="email"
@@ -125,10 +144,11 @@
             </form>
           </div>
 
+          <!-- SARE SOZIALAK -->
 
           <ul class="footer-redes">
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://x.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images.jpg"
@@ -138,7 +158,7 @@
             </li>
 
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://www.instagram.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images1.png"
@@ -148,7 +168,7 @@
             </li>
 
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://www.tiktok.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images2.png"
@@ -158,7 +178,7 @@
             </li>
 
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://www.youtube.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images3.png"
@@ -168,7 +188,7 @@
             </li>
 
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://www.linkedin.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images4.png"
@@ -178,7 +198,7 @@
             </li>
 
             <li class="footer-redes-item">
-              <a class="footer-redes-link" href="#">
+              <a class="footer-redes-link" href="https://www.facebook.com/">
                 <img
                   class="footer-redes-img"
                   src="argazkiak/images5.png"
@@ -190,7 +210,6 @@
         </div>
       </div>
 
-
       <div class="footer-bottom">
         <p class="footer-copyright">
           All rights reserved. All trademarks are the property of their
@@ -198,11 +217,24 @@
         </p>
 
         <div class="footer-enlaces">
-          <a class="footer-enlace" href="#"> Cookie-en politika </a>
+          <a class="footer-enlace" href=""> Cookie-en politika </a>
 
-          <a class="footer-enlace" href="#"> Pribatutasun-politika </a>
+          <a class="footer-enlace" href=""> Pribatutasun-politika </a>
         </div>
       </div>
     </footer>
+
+    <input type="checkbox" id="cookie-toggle" class="cookie-toggle" />
+
+    <div class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          cookie-ak erabiltzen ditugu zure esperientzia hobetzeeko<a href="#">
+            cookie politika</a
+          >.
+        </p>
+        <label for="cookie-toggle" class="cookie-btn">Aceptar</label>
+      </div>
+    </div>
   </body>
 </html>

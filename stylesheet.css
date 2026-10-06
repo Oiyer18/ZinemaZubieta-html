@@ -14,9 +14,8 @@ header {
 
 button{
     float: right;
-    margin-top: 20px;
     margin-right: 15px;
-    height:62;
+    margin-top: 20px;
     padding: 0 24px;
     border: none;
     border-radius: 20px;
@@ -104,7 +103,83 @@ header summary:last-child{margin-left: 2000px;}
     color: rgb(16, 51, 116);
 }
 
-/* footerraren hasiera*/
+
+/* ==========================================================================
+   6. MAIN / EDUKI NAGUSIA
+   ========================================================================== */
+
+.main {
+  min-height: 700px;
+  padding-top: 300px; /* Header fixed-ak edukia ez estaltzeko marjina */
+  padding-bottom: 70px;
+}
+
+/* ==========================================================================
+   7. IRUDI CARRUSELA
+   ========================================================================== */
+
+/* Carruselaren edukiontzi orokorra */
+.carrusel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Kanpora ateratzen diren irudiak ezkutatu */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Horizontal scroll bidezko carruselaren konfigurazioa */
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+/* Animazio bidezko carruselaren irudi bidea */
+.carrusel-track {
+  display: flex;
+  animation: carrusel-automatico 15s infinite ease-in-out; /* Automatikoki mugitzeko animazioa */
+  width: 100%;
+  height: 1200px;
+}
+
+/* Carruselek elementu bakoitzaren tamaina */
+.carrusel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 450px;
+  object-fit: cover; /* Irudia ez deformatzeko */
+  display: block;
+}
+
+.carrusel-item img {
+  width: 100%;
+  height: 1200px;
+}
+
+/* Carruselaren beheko puntu nabigatzaileak */
+.carrusel-nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+/* Puntu bakoitzaren estiloa */
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   8. FOOTER / OIN-OHARRA
+   ========================================================================== */
+
 .footer {
   background-color: #173d7a;
   color: white;
@@ -112,12 +187,14 @@ header summary:last-child{margin-left: 2000px;}
   font-family: Arial, sans-serif;
 }
 
+/* Footer-a bi zutabetan banatzeko Grid sistema */
 .footer-contenido {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 70%; /* Ezkerreko zutabea %30, eskuinekoa %70 */
   gap: 30px;
 }
 
+/* --- FOOTER EZKERRA --- */
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -134,6 +211,11 @@ header summary:last-child{margin-left: 2000px;}
   margin-bottom: 12px;
 }
 
+.footer-listadatuak {
+  list-style-type: none;
+  padding: 0;
+}
+
 .footer-info p {
   margin: 6px 0;
   font-size: 16px;
@@ -141,17 +223,16 @@ header summary:last-child{margin-left: 2000px;}
   line-height: 1.4;
 }
 
-.footer-info i {
-  color: #ffd800;
-  margin-right: 10px;
-  font-size: 22px;
-}
-
+/* --- FOOTER ESKUINA --- */
 .footer-derecha {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* ==========================================================================
+   9. NEWSLETTER ATALA
+   ========================================================================== */
 
 .newsletter {
   background-color: #ffdc4a;
@@ -165,71 +246,161 @@ header summary:last-child{margin-left: 2000px;}
   font-size: 32px;
   margin: 0 0 38px;
   font-weight: 800;
+  color: #08285c;
 }
 
+/* Inpout-a eta Botoia lerro berean jartzeko */
 .newsletter-form {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-.newsletter input {
+/* Emaila sartzeko eremua */
+.newsletter-input {
   flex: 1;
   height: 58px;
   background: transparent;
-
   border: 2px solid #08285c;
   border-radius: 35px;
-
   padding: 0 20px;
-
   font-size: 23px;
   color: #08285c;
-
   outline: none;
 }
 
-.newsletter input::placeholder {
+.newsletter-input::placeholder {
   color: #08285c;
   opacity: 1;
 }
 
-.newsletter button {
+/* Bidaltzeko botoia */
+.newsletter-button {
   height: 62px;
-
   padding: 0 24px;
-
   border: none;
   border-radius: 20px;
-
   background-color: #171300;
   color: #fff3cc;
-
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  margin: 0;
 }
 
-.newsletter button:hover {
+.newsletter-button:hover {
   background-color: #292000;
 }
 
+/* ==========================================================================
+   10. SARE SOZIALAK
+   ========================================================================== */
+
 .footer-redes {
   display: flex;
-  footer-redes-img {
-    width: 150px;
-    height: 140px;
-    margin-right: 25px;
-  }
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 45px;
-  margin-top: 130px;
-  border-image-width: 1px;
+  justify-content: flex-end; /* Eskuinean lerrokatzeko */
+  gap: 25px;
+  margin-right: 100px;
   list-style-type: none;
 }
+
 .footer-redes-img {
-  width: 150px;
-  height: 140px;
-  margin-right: 31px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   11. FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
+   ========================================================================== */
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-enlaces {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-enlace {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-enlace:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   12. COOKIEN BANNERRA (CSS BAKARRIK ERABILTZEN DUEN MEKANISMOA)
+   ========================================================================= */
+
+/* Checkbox-a ezkutatu, bistaratzeko egoera kontrolatzeko bakarrik baita */
+.cookie-toggle {
+  display: none;
+}
+
+/* Cookie-en oharraren diseinua (pantailaren behekaldean finko) */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Zazpian guztiz zentratzeko */
+  width: 90%;
+  max-width: 600px;
+  background-color: #222;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: sans-serif;
+  display: block; /* Hasieran ikusi egiten da */
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cookie-content a {
+  color: #4da3ff;
+  text-decoration: underline;
+}
+
+/* Onartzeko botoiaren estiloa */
+.cookie-btn {
+  background-color: rgb(16, 51, 116);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.cookie-btn:hover {
+  background-color: rgb(255, 206, 0);
+}
+
+/* Checkbox-a sakatuta dagoenean (checked), cookie bannerra ezkutatu */
+.cookie-toggle:checked + .cookie-banner {
+  display: none;
 }
