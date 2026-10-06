@@ -1,213 +1,49 @@
 * {
-    font-family: sans-serif;
-    color: white;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-header {
-    background-color: rgb(16, 51, 116);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-button{
-    margin-left: 520px;
-    height:62;
-    padding: 0 24px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: rgb(16, 51, 116);
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;}
-
-button:hover{background-color: 292000;}
-
-
-header span {
-    text-transform: uppercase;
-    font-size: 100px;
-    margin-left: 30px;   
+body {
+  margin: 0;
 }
 
-header table {
-    max-width: 1000px;
-    max-height: 700px;
+/* =========================
+   HEADERRA
+========================= */
+
+#headerra {
+  background-color: rgb(16, 51, 116);
+
+  position: fixed;
+
+  width: 100%;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  color: white;
 }
 
-header summary{text-transform: uppercase;
-color: rgb(255, 206, 0);
-margin-left: 20px;}
+.header-goikoa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-#headerra ul {
-    column-count: 2;
-    list-style-type: none;
+  padding: 10px 30px;
+}
+
+.header-logo span {
+  text-transform: uppercase;
+  font-size: 70px;
 }
 
 #zubieta-oria {
-    color: rgb(255, 206, 0);
+  color: rgb(255, 206, 0);
 }
 
-#headerra details summary:nth-child(even) {
-    display: inline;
-}
-
-#headerra nav {
-    display: flex;
-    gap: 30px;
-    padding-bottom: 10px;
-    align-items: center;
-}
-
-.hasiera-border{
-border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-
-}
-
-.norgara-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-}
-
-.astekoegunak-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-
-}
-
-.pelikuleiburuzko-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-}
-
-#headerra nav a {
-    text-decoration: none;
-    color: rgb(255, 206, 0);
-}
-
-.desplegablea {
-    position: relative;
-}
-
-.menua-ezkerrean {
-    margin-left: 750px;
-    text-transform: uppercase;
-}
-
-.desplegable-menua {
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    display: none;
-}
-
-.desplegablea:hover .desplegable-menua {
-    display: block;
-    background-color: rgb(16, 51, 116);
-}
-
-/* footerraren hasiera*/
-.footer {
-  background-color: #173d7a;
-  color: white;
-  padding: 40px 18px 8px;
-  font-family: Arial, sans-serif;
-}
-
-.footer-contenido {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 30px;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo {
-  width: 350px;
-  max-width: 100%;
-  margin-bottom: 25px;
-}
-
-.footer-info h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.footer-info p {
-  margin: 6px 0;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.footer-info i {
-  color: #ffd800;
-  margin-right: 10px;
-  font-size: 22px;
-}
-
-.footer-derecha {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.newsletter {
-  background-color: #ffdc4a;
-  border-radius: 22px;
-  padding: 55px 52px 40px;
-  color: #08285c;
-  margin-right: 30px;
-}
-
-.newsletter h2 {
-  font-size: 32px;
-  margin: 0 0 38px;
-  font-weight: 800;
-}
-
-.newsletter-form {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.newsletter input {
-  flex: 1;
-  height: 58px;
-
-  background: transparent;
-
-  border: 2px solid #08285c;
-  border-radius: 35px;
-
-  padding: 0 20px;
-
-  font-size: 23px;
-  color: #08285c;
-
-  outline: none;
-}
-
-.newsletter input::placeholder {
-  color: #08285c;
-  opacity: 1;
-}
-
-.newsletter button {
+.saioa-button {
   height: 62px;
 
   padding: 0 24px;
@@ -215,34 +51,434 @@ border-style: solid;
   border: none;
   border-radius: 20px;
 
-  background-color: #171300;
-  color: #fff3cc;
+  background-color: white;
 
-  font-size: 20px;
+  color: rgb(16, 51, 116);
+
+  font-size: 15px;
   font-weight: bold;
+
   cursor: pointer;
 }
 
-.newsletter button:hover {
+.saioa-button:hover {
+  background-color: #e4e4e4;
+}
+
+/* =========================
+   HEADER TAULA
+========================= */
+
+.header-taula {
+  max-width: 1000px;
+  margin-left: 30px;
+}
+
+#headerra summary {
+  text-transform: uppercase;
+
+  color: rgb(255, 206, 0);
+
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+
+#headerra details {
+  color: white;
+}
+
+#headerra ul {
+  list-style-type: none;
+}
+
+/* =========================
+   NABIGAZIOA
+========================= */
+
+#headerra nav {
+  display: flex;
+
+  gap: 30px;
+
+  padding: 10px 30px;
+
+  align-items: center;
+}
+
+.menua-ezkerrean {
+  text-transform: uppercase;
+}
+
+.nabigazioa-link {
+  text-decoration: none;
+
+  color: rgb(255, 206, 0);
+
+  white-space: nowrap;
+}
+
+/* BORDERRAK */
+
+.hasiera-border,
+.norgara-border,
+.astekoegunak-border,
+.pelikuleiburuzko-border {
+  border: 2px solid rgb(255, 206, 0);
+
+  border-radius: 4px;
+
+  padding: 5px 10px;
+}
+
+.hasiera-border:hover,
+.norgara-border:hover,
+.astekoegunak-border:hover,
+.pelikuleiburuzko-border:hover {
+  background-color: rgb(255, 206, 0);
+
+  color: rgb(16, 51, 116);
+}
+
+/* =========================
+   MENU DESPLEGABLEA
+========================= */
+
+.desplegablea {
+  position: relative;
+}
+
+.desplegable-menua {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  display: none;
+
+  min-width: 160px;
+
+  background-color: rgb(16, 51, 116);
+
+  border: 1px solid rgb(255, 206, 0);
+
+  padding: 10px;
+
+  z-index: 1001;
+}
+
+.desplegable-menua a {
+  display: block;
+
+  padding: 8px;
+
+  text-decoration: none;
+
+  color: rgb(255, 206, 0);
+}
+
+.desplegable-menua a:hover {
+  background-color: rgb(255, 206, 0);
+
+  color: rgb(16, 51, 116);
+}
+
+.desplegablea:hover .desplegable-menua {
+  display: block;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  /*
+    Como el header es fixed,
+    hay que dejar espacio arriba.
+    */
+
+  min-height: 700px;
+
+  padding-top: 300px;
+}
+
+/* =========================
+   FOOTERRA
+========================= */
+
+.footer {
+  background-color: #173d7a;
+
+  color: white;
+
+  padding: 40px 18px 8px;
+
+  font-family: Arial, sans-serif;
+}
+
+.footer-contenido {
+  display: grid;
+
+  grid-template-columns: 30% 70%;
+
+  gap: 30px;
+}
+
+/* =========================
+   FOOTER EZKERRA
+========================= */
+
+.footer-info {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 350px;
+
+  max-width: 100%;
+
+  margin-bottom: 25px;
+}
+
+.footer-info h3 {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.footer-listadatuak {
+  list-style-type: none;
+
+  padding: 0;
+}
+
+.footer-info p {
+  margin: 6px 0;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  line-height: 1.4;
+}
+
+/* =========================
+   FOOTER ESKUINA
+========================= */
+
+.footer-derecha {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+  background-color: #ffdc4a;
+
+  border-radius: 22px;
+
+  padding: 55px 52px 40px;
+
+  color: #08285c;
+
+  margin-right: 30px;
+}
+
+.newsletter h2 {
+  font-size: 32px;
+
+  margin: 0 0 38px;
+
+  font-weight: 800;
+
+  color: #08285c;
+}
+
+.newsletter-form {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+}
+
+.newsletter-input {
+  flex: 1;
+
+  height: 58px;
+
+  background: transparent;
+
+  border: 2px solid #08285c;
+
+  border-radius: 35px;
+
+  padding: 0 20px;
+
+  font-size: 23px;
+
+  color: #08285c;
+
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #08285c;
+
+  opacity: 1;
+}
+
+.newsletter-button {
+  height: 62px;
+
+  padding: 0 24px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background-color: #171300;
+
+  color: #fff3cc;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin: 0;
+}
+
+.newsletter-button:hover {
   background-color: #292000;
 }
 
+/* =========================
+   SARE SOZIALAK
+========================= */
+
 .footer-redes {
   display: flex;
-  footer-redes-img {
-    width: 150px;
-    height: 140px;
-    margin-right: 25px;
-  }
-  align-items: flex-end;
+
   justify-content: flex-end;
-  gap: 45px;
-  margin-top: 130px;
-  border-image-width: 1px;
+
+  gap: 25px;
+
+  margin-right: 100px;
+
+
   list-style-type: none;
 }
+
 .footer-redes-img {
-  width: 150px;
-  height: 140px;
-  margin-right: 31px;
+  width: 70px;
+
+  height: 70px;
+
+  object-fit: contain;
+}
+
+/* =========================
+   FOOTER BEHEKO ZATIA
+========================= */
+
+.footer-bottom {
+  margin-top: 30px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-enlaces {
+  display: flex;
+  
+  gap: 20px;
+}
+
+.footer-enlace {
+  color: white;
+
+  text-decoration: none;
+}
+
+.footer-enlace:hover {
+  text-decoration: underline;
+}
+/* Ocultamos el checkbox por completo */
+.cookie-toggle {
+  display: none;
+}
+
+/* Diseño del banner flotante */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  background-color: #222;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: sans-serif;
+  display: block; /* Visible por defecto */
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cookie-content a {
+  color: #4da3ff;
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  background-color: rgb(16,51,116);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.cookie-btn:hover {
+  background-color: rgb(255, 206, 0);
+}
+
+.cookie-toggle:checked + .cookie-banner {
+  display: none;
 }
