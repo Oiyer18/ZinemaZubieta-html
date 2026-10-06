@@ -103,7 +103,28 @@ header summary:last-child{margin-left: 2000px;}
     color: rgb(16, 51, 116);
 }
 
+/*=====================NOR GARA ORRIAREN CCS-A============================0*/
+span {text-transform: uppercase;
+font-size: 50px;}
+.gara-oria {color: rgb(255, 206, 0);}
 
+h4{text-transform: uppercase;
+text-align: center;
+text-decoration: underline;
+font-weight: bold;
+color: rgb(255, 206, 0);
+}
+
+.aretoirudia{
+  margin-left: 500px;
+  width: 500px;
+  height: 325px;
+}
+.argazkialogoa{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
 /* ==========================================================================
    6. MAIN / EDUKI NAGUSIA
    ========================================================================== */
