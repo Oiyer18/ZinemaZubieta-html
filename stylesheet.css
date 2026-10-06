@@ -12,29 +12,36 @@
 body {
   margin: 0;
 }
-
+body {background-color: rgb(6, 31, 77);}
 header {
-  background-color: rgb(16, 51, 116);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 220px;
+    background-color: rgb(16, 51, 116);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 220px;
 }
 
-button {
-  float: right;
-  margin-top: 20px;
-  margin-right: 15px;
-  height: 62;
-  padding: 0 24px;
-  border: none;
-  border-radius: 20px;
-  background-color: white;
-  color: rgb(16, 51, 116);
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
+button{
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(16, 51, 116);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;}
+
+button:hover{background-color: 292000;}
+
+
+header span {
+    text-transform: uppercase;
+    font-size: 100px;
+    margin-left: 30px;   
 }
 
 /* Botoiaren gainetik sagua igarotzean (Hover) */
@@ -81,6 +88,12 @@ header summary:last-child {
   padding: 10px 30px;
   align-items: center;
 }
+
+#headerra nav a {
+    text-decoration: none;
+    color: rgb(255, 206, 0);
+}
+
 
 .menua-ezkerrean {
   text-transform: uppercase;
