@@ -1,86 +1,84 @@
+/* ==========================================================================
+   1. ESTILO OROKORRAK (GLOBAL STYLES)
+   ========================================================================== */
+
+/* Elementu guztietan tamainaren kalkulua erraztu (padding-a barne hartuz) */
 * {
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
+/* Gorputzeko marjinak kendu */
 body {
   margin: 0;
 }
 
-/* =========================
-   HEADERRA
-========================= */
+/* ==========================================================================
+   2. HEADER / GOIBURUA
+   ========================================================================== */
 
+/* Header-aren edukiontzi nagusia (pantailan finkatuta goian) */
 #headerra {
   background-color: rgb(16, 51, 116);
-
-  position: fixed;
-
+  position: fixed; /* Goian finko gelditzeko scroll egitean */
   width: 100%;
-
   top: 0;
   left: 0;
-
-  z-index: 1000;
-
+  z-index: 1000; /* Beste elementuen gainetik agertzeko */
   color: white;
 }
 
+/* Header-aren goiko zatia (Logoa eta Saioa hasteko botoia) */
 .header-goikoa {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-between; /* Elementuak alboetara banatu */
   padding: 10px 30px;
 }
 
+/* Logoaren letra-tamaina eta letra maiuskulak */
 .header-logo span {
   text-transform: uppercase;
   font-size: 70px;
 }
 
+/* Logoaren testu nabarmendua (horia) */
 #zubieta-oria {
   color: rgb(255, 206, 0);
 }
 
+/* Saioa hasteko botoiaren estiloak */
 .saioa-button {
   height: 62px;
-
   padding: 0 24px;
-
   border: none;
   border-radius: 20px;
-
   background-color: white;
-
   color: rgb(16, 51, 116);
-
   font-size: 15px;
   font-weight: bold;
-
   cursor: pointer;
 }
 
+/* Botoiaren gainetik sagua igarotzean (Hover) */
 .saioa-button:hover {
   background-color: #e4e4e4;
 }
 
-/* =========================
-   HEADER TAULA
-========================= */
+/* ==========================================================================
+   3. HEADER TAULA / ETA DETAILS
+   ========================================================================== */
 
 .header-taula {
   max-width: 1000px;
   margin-left: 30px;
 }
 
+/* HTML summary etiketaren estiloak (desplegagarria irekitzeko izenburua) */
 #headerra summary {
   text-transform: uppercase;
-
   color: rgb(255, 206, 0);
-
   margin-left: 20px;
-
   cursor: pointer;
 }
 
@@ -88,21 +86,19 @@ body {
   color: white;
 }
 
+/* Zerrendako borobilak kendu */
 #headerra ul {
   list-style-type: none;
 }
 
-/* =========================
-   NABIGAZIOA
-========================= */
+/* ==========================================================================
+   4. NABIGAZIO-MENUA
+   ========================================================================== */
 
 #headerra nav {
   display: flex;
-
-  gap: 30px;
-
+  gap: 30px; /* Loturen arteko tartea */
   padding: 10px 30px;
-
   align-items: center;
 }
 
@@ -110,251 +106,254 @@ body {
   text-transform: uppercase;
 }
 
+/* Nabigazioko esteken estilo orokorra */
 .nabigazioa-link {
-  text-decoration: none;
-
+  text-decoration: none; /* Azpimarra kentzeko */
   color: rgb(255, 206, 0);
-
-  white-space: nowrap;
+  white-space: nowrap; /* Testua bi lerrotan ez banatzeko */
 }
 
-/* BORDERRAK */
-
+/* Botoi itxurako ertzedun loturak */
 .hasiera-border,
 .norgara-border,
 .astekoegunak-border,
 .pelikuleiburuzko-border {
   border: 2px solid rgb(255, 206, 0);
-
   border-radius: 4px;
-
   padding: 5px 10px;
 }
 
+/* Lotura horien hover efektua (koloreak alderantzikatu) */
 .hasiera-border:hover,
 .norgara-border:hover,
 .astekoegunak-border:hover,
 .pelikuleiburuzko-border:hover {
   background-color: rgb(255, 206, 0);
-
   color: rgb(16, 51, 116);
 }
 
-/* =========================
-   MENU DESPLEGABLEA
-========================= */
+/* ==========================================================================
+   5. MENU DESPLEGAGARRIA (DROPDOWN)
+   ========================================================================== */
 
+/* Menu desplegarriaren gurasoa finkatu */
 .desplegablea {
   position: relative;
 }
 
+/* Desplegatzen den menua (hasieran ezkutuan) */
 .desplegable-menua {
   position: absolute;
-
   top: 100%;
   left: 0;
-
-  display: none;
-
+  display: none; /* Hasieran ezkutatuta */
   min-width: 160px;
-
   background-color: rgb(16, 51, 116);
-
   border: 1px solid rgb(255, 206, 0);
-
   padding: 10px;
-
   z-index: 1001;
 }
 
+/* Desplegable barruko estekak */
 .desplegable-menua a {
   display: block;
-
   padding: 8px;
-
   text-decoration: none;
-
   color: rgb(255, 206, 0);
 }
 
+/* Desplegable barruko esteken hover-a */
 .desplegable-menua a:hover {
   background-color: rgb(255, 206, 0);
-
   color: rgb(16, 51, 116);
 }
 
+/* Sagua gainetik igarotzean menu desplegarria erakutsi */
 .desplegablea:hover .desplegable-menua {
   display: block;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* ==========================================================================
+   6. MAIN / EDUKI NAGUSIA
+   ========================================================================== */
 
 .main {
-  /*
-    Como el header es fixed,
-    hay que dejar espacio arriba.
-    */
-
   min-height: 700px;
-
-  padding-top: 300px;
+  padding-top: 300px; /* Header fixed-ak edukia ez estaltzeko marjina */
+  padding-bottom: 70px;
 }
 
-/* =========================
-   FOOTERRA
-========================= */
+/* ==========================================================================
+   7. IRUDI CARRUSELA
+   ========================================================================== */
+
+/* Carruselaren edukiontzi orokorra */
+.carrusel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Kanpora ateratzen diren irudiak ezkutatu */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Horizontal scroll bidezko carruselaren konfigurazioa */
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+/* Animazio bidezko carruselaren irudi bidea */
+.carrusel-track {
+  display: flex;
+  animation: carrusel-automatico 15s infinite ease-in-out; /* Automatikoki mugitzeko animazioa */
+  width: 100%;
+  height: 1200px;
+}
+
+/* Carruselek elementu bakoitzaren tamaina */
+.carrusel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 450px;
+  object-fit: cover; /* Irudia ez deformatzeko */
+  display: block;
+}
+
+.carrusel-item img {
+  width: 100%;
+  height: 1200px;
+}
+
+/* Carruselaren beheko puntu nabigatzaileak */
+.carrusel-nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+/* Puntu bakoitzaren estiloa */
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   8. FOOTER / OIN-OHARRA
+   ========================================================================== */
 
 .footer {
   background-color: #173d7a;
-
   color: white;
-
   padding: 40px 18px 8px;
-
   font-family: Arial, sans-serif;
 }
 
+/* Footer-a bi zutabetan banatzeko Grid sistema */
 .footer-contenido {
   display: grid;
-
-  grid-template-columns: 30% 70%;
-
+  grid-template-columns: 30% 70%; /* Ezkerreko zutabea %30, eskuinekoa %70 */
   gap: 30px;
 }
 
-/* =========================
-   FOOTER EZKERRA
-========================= */
-
+/* --- FOOTER EZKERRA --- */
 .footer-info {
   display: flex;
-
   flex-direction: column;
 }
 
 .footer-logo {
   width: 350px;
-
   max-width: 100%;
-
   margin-bottom: 25px;
 }
 
 .footer-info h3 {
   font-size: 20px;
-
   margin-bottom: 12px;
 }
 
 .footer-listadatuak {
   list-style-type: none;
-
   padding: 0;
 }
 
 .footer-info p {
   margin: 6px 0;
-
   font-size: 16px;
-
   font-weight: bold;
-
   line-height: 1.4;
 }
 
-/* =========================
-   FOOTER ESKUINA
-========================= */
-
+/* --- FOOTER ESKUINA --- */
 .footer-derecha {
   display: flex;
-
   flex-direction: column;
-
   justify-content: space-between;
 }
 
-/* =========================
-   NEWSLETTER
-========================= */
+/* ==========================================================================
+   9. NEWSLETTER ATALA
+   ========================================================================== */
 
 .newsletter {
   background-color: #ffdc4a;
-
   border-radius: 22px;
-
   padding: 55px 52px 40px;
-
   color: #08285c;
-
   margin-right: 30px;
 }
 
 .newsletter h2 {
   font-size: 32px;
-
   margin: 0 0 38px;
-
   font-weight: 800;
-
   color: #08285c;
 }
 
+/* Inpout-a eta Botoia lerro berean jartzeko */
 .newsletter-form {
   display: flex;
-
   align-items: center;
-
   gap: 32px;
 }
 
+/* Emaila sartzeko eremua */
 .newsletter-input {
   flex: 1;
-
   height: 58px;
-
   background: transparent;
-
   border: 2px solid #08285c;
-
   border-radius: 35px;
-
   padding: 0 20px;
-
   font-size: 23px;
-
   color: #08285c;
-
   outline: none;
 }
 
 .newsletter-input::placeholder {
   color: #08285c;
-
   opacity: 1;
 }
 
+/* Bidaltzeko botoia */
 .newsletter-button {
   height: 62px;
-
   padding: 0 24px;
-
   border: none;
-
   border-radius: 20px;
-
   background-color: #171300;
-
   color: #fff3cc;
-
   font-size: 20px;
-
   font-weight: bold;
-
   cursor: pointer;
-
   margin: 0;
 }
 
@@ -362,77 +361,67 @@ body {
   background-color: #292000;
 }
 
-/* =========================
-   SARE SOZIALAK
-========================= */
+/* ==========================================================================
+   10. SARE SOZIALAK
+   ========================================================================== */
 
 .footer-redes {
   display: flex;
-
-  justify-content: flex-end;
-
+  justify-content: flex-end; /* Eskuinean lerrokatzeko */
   gap: 25px;
-
   margin-right: 100px;
-
-
   list-style-type: none;
 }
 
 .footer-redes-img {
   width: 70px;
-
   height: 70px;
-
   object-fit: contain;
 }
 
-/* =========================
-   FOOTER BEHEKO ZATIA
-========================= */
+/* ==========================================================================
+   11. FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
+   ========================================================================== */
 
 .footer-bottom {
   margin-top: 30px;
-
   padding-top: 15px;
-
   border-top: 1px solid white;
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 20px;
 }
 
 .footer-enlaces {
   display: flex;
-  
   gap: 20px;
 }
 
 .footer-enlace {
   color: white;
-
   text-decoration: none;
 }
 
 .footer-enlace:hover {
   text-decoration: underline;
 }
-/* Ocultamos el checkbox por completo */
+
+/* ==========================================================================
+   12. COOKIEN BANNERRA (CSS BAKARRIK ERABILTZEN DUEN MEKANISMOA)
+   ========================================================================= */
+
+/* Checkbox-a ezkutatu, bistaratzeko egoera kontrolatzeko bakarrik baita */
 .cookie-toggle {
   display: none;
 }
 
-/* Diseño del banner flotante */
+/* Cookie-en oharraren diseinua (pantailaren behekaldean finko) */
 .cookie-banner {
   position: fixed;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* Zazpian guztiz zentratzeko */
   width: 90%;
   max-width: 600px;
   background-color: #222;
@@ -442,7 +431,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   font-family: sans-serif;
-  display: block; /* Visible por defecto */
+  display: block; /* Hasieran ikusi egiten da */
 }
 
 .cookie-content {
@@ -463,8 +452,9 @@ body {
   text-decoration: underline;
 }
 
+/* Onartzeko botoiaren estiloa */
 .cookie-btn {
-  background-color: rgb(16,51,116);
+  background-color: rgb(16, 51, 116);
   color: #fff;
   padding: 8px 16px;
   border-radius: 4px;
@@ -479,6 +469,7 @@ body {
   background-color: rgb(255, 206, 0);
 }
 
+/* Checkbox-a sakatuta dagoenean (checked), cookie bannerra ezkutatu */
 .cookie-toggle:checked + .cookie-banner {
   display: none;
 }
