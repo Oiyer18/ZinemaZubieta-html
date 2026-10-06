@@ -490,10 +490,7 @@ header summary:last-child{margin-left: 2000px;}
 .cookie-toggle:checked + .cookie-banner {
   display: none;
 }
-  width: 150px;
-  height: 140px;
-  margin-right: 31px;
-}
+
 
 
 
