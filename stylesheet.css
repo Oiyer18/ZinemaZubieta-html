@@ -115,3 +115,134 @@ border-style: solid;
     display: block;
     background-color: rgb(16, 51, 116);
 }
+
+/* footerraren hasiera*/
+.footer {
+  background-color: #173d7a;
+  color: white;
+  padding: 40px 18px 8px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 30px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 350px;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer-info h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.footer-info i {
+  color: #ffd800;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.footer-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newsletter {
+  background-color: #ffdc4a;
+  border-radius: 22px;
+  padding: 55px 52px 40px;
+  color: #08285c;
+  margin-right: 30px;
+}
+
+.newsletter h2 {
+  font-size: 32px;
+  margin: 0 0 38px;
+  font-weight: 800;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.newsletter input {
+  flex: 1;
+  height: 58px;
+
+  background: transparent;
+
+  border: 2px solid #08285c;
+  border-radius: 35px;
+
+  padding: 0 20px;
+
+  font-size: 23px;
+  color: #08285c;
+
+  outline: none;
+}
+
+.newsletter input::placeholder {
+  color: #08285c;
+  opacity: 1;
+}
+
+.newsletter button {
+  height: 62px;
+
+  padding: 0 24px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #171300;
+  color: #fff3cc;
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #292000;
+}
+
+.footer-redes {
+  display: flex;
+  footer-redes-img {
+    width: 150px;
+    height: 140px;
+    margin-right: 25px;
+  }
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 45px;
+  margin-top: 130px;
+  border-image-width: 1px;
+  list-style-type: none;
+}
+.footer-redes-img {
+  width: 150px;
+  height: 140px;
+  margin-right: 31px;
+}
