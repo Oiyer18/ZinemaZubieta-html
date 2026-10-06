@@ -9,9 +9,13 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    height: 220px;
 }
+
 button{
-    margin-left: 520px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
     height:62;
     padding: 0 24px;
     border: none;
@@ -40,10 +44,7 @@ header summary{text-transform: uppercase;
 color: rgb(255, 206, 0);
 margin-left: 20px;}
 
-#headerra ul {
-    column-count: 2;
-    list-style-type: none;
-}
+header summary:last-child{margin-left: 2000px;}
 
 #zubieta-oria {
     color: rgb(255, 206, 0);
@@ -60,60 +61,49 @@ margin-left: 20px;}
     align-items: center;
 }
 
-.hasiera-border{
-border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
 
-}
-
-.norgara-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-}
-
-.astekoegunak-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-
-}
-
-.pelikuleiburuzko-border{
-    border-style: solid;
-    border-color:rgb(255, 206, 0);
-    border-radius: 4px;
-    padding: 5px;
-}
 
 #headerra nav a {
     text-decoration: none;
     color: rgb(255, 206, 0);
 }
 
-.desplegablea {
-    position: relative;
-}
 
 .menua-ezkerrean {
+    margin-top: 75px;
     margin-left: 750px;
     text-transform: uppercase;
 }
 
-.desplegable-menua {
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    display: none;
+.desplegablea {
+    position: relative;
 }
 
+.desplegable-menua{
+    display: none;
+    position: absolute;
+    background-color: rgb(16, 51, 116);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
 .desplegablea:hover .desplegable-menua {
     display: block;
-    background-color: rgb(16, 51, 116);
+}
+
+ #headerra li > a{
+    display: block;
+    color: rgb(255, 206, 0);
+    padding: 16px 1px 1px 16px;
+    text-decoration: none;
+ }
+
+#headerra li > a:hover {
+    background-color: rgb(255, 206, 0); /*holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+    color: rgb(16, 51, 116);
 }
 
 /* footerraren hasiera*/
@@ -246,3 +236,7 @@ border-style: solid;
   height: 140px;
   margin-right: 31px;
 }
+
+
+
+
