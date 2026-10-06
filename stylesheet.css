@@ -6,6 +6,7 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  color: white;
 }
 
 /* Gorputzeko marjinak kendu */
@@ -48,6 +49,8 @@ header span {
 .saioa-button:hover {
   background-color: #e4e4e4;
 }
+
+#zubieta-oria {color: rgb(255, 206, 0);}
 
 /* ==========================================================================
    3. HEADER TAULA / ETA DETAILS
@@ -106,24 +109,8 @@ header summary:last-child {
   white-space: nowrap; /* Testua bi lerrotan ez banatzeko */
 }
 
-/* Botoi itxurako ertzedun loturak */
-.hasiera-border,
-.norgara-border,
-.astekoegunak-border,
-.pelikuleiburuzko-border {
-  border: 2px solid rgb(255, 206, 0);
-  border-radius: 4px;
-  padding: 5px 10px;
-}
-
 /* Lotura horien hover efektua (koloreak alderantzikatu) */
-.hasiera-border:hover,
-.norgara-border:hover,
-.astekoegunak-border:hover,
-.pelikuleiburuzko-border:hover {
-  background-color: rgb(255, 206, 0);
-  color: rgb(16, 51, 116);
-}
+
 
 #headerra nav a {
   text-decoration: none;
@@ -168,9 +155,7 @@ header summary:last-child {
   display: none; /* Hasieran ezkutatuta */
   min-width: 160px;
   background-color: rgb(16, 51, 116);
-  border: 1px solid rgb(255, 206, 0);
-  padding: 10px;
-  z-index: 1001;
+  text-align:justify;
 }
 
 /* Desplegable barruko estekak */
