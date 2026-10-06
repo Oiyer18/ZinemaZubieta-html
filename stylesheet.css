@@ -13,52 +13,28 @@ body {
   margin: 0;
 }
 
-/* ==========================================================================
-   2. HEADER / GOIBURUA
-   ========================================================================== */
-
-/* Header-aren edukiontzi nagusia (pantailan finkatuta goian) */
-#headerra {
-  background-color: rgb(16, 51, 116);
-  position: fixed; /* Goian finko gelditzeko scroll egitean */
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Beste elementuen gainetik agertzeko */
-  color: white;
+header {
+    background-color: rgb(16, 51, 116);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 220px;
 }
 
-/* Header-aren goiko zatia (Logoa eta Saioa hasteko botoia) */
-.header-goikoa {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Elementuak alboetara banatu */
-  padding: 10px 30px;
-}
-
-/* Logoaren letra-tamaina eta letra maiuskulak */
-.header-logo span {
-  text-transform: uppercase;
-  font-size: 70px;
-}
-
-/* Logoaren testu nabarmendua (horia) */
-#zubieta-oria {
-  color: rgb(255, 206, 0);
-}
-
-/* Saioa hasteko botoiaren estiloak */
-.saioa-button {
-  height: 62px;
-  padding: 0 24px;
-  border: none;
-  border-radius: 20px;
-  background-color: white;
-  color: rgb(16, 51, 116);
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
+button{
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    height:62;
+    padding: 0 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(16, 51, 116);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;}
 
 /* Botoiaren gainetik sagua igarotzean (Hover) */
 .saioa-button:hover {
@@ -86,6 +62,7 @@ body {
   color: white;
 }
 
+header summary:last-child{margin-left: 2000px;}
 /* Zerrendako borobilak kendu */
 #headerra ul {
   list-style-type: none;
@@ -101,6 +78,7 @@ body {
   padding: 10px 30px;
   align-items: center;
 }
+
 
 .menua-ezkerrean {
   text-transform: uppercase;
@@ -132,6 +110,11 @@ body {
   color: rgb(16, 51, 116);
 }
 
+#headerra nav a {
+    text-decoration: none;
+    color: rgb(255, 206, 0);
+}
+
 /* ==========================================================================
    5. MENU DESPLEGAGARRIA (DROPDOWN)
    ========================================================================== */
@@ -141,6 +124,27 @@ body {
   position: relative;
 }
 
+.menua-ezkerrean {
+    margin-top: 75px;
+    margin-left: 750px;
+    text-transform: uppercase;
+}
+
+.desplegablea {
+    position: relative;
+}
+
+.desplegable-menua{
+    display: none;
+    position: absolute;
+    background-color: rgb(16, 51, 116);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
 /* Desplegatzen den menua (hasieran ezkutuan) */
 .desplegable-menua {
   position: absolute;
@@ -170,6 +174,19 @@ body {
 
 /* Sagua gainetik igarotzean menu desplegarria erakutsi */
 .desplegablea:hover .desplegable-menua {
+    display: block;
+}
+
+ #headerra li > a{
+    display: block;
+    color: rgb(255, 206, 0);
+    padding: 16px 1px 1px 16px;
+    text-decoration: none;
+ }
+
+#headerra li > a:hover {
+    background-color: rgb(255, 206, 0); /*holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+    color: rgb(16, 51, 116);
   display: block;
 }
 
@@ -473,3 +490,11 @@ body {
 .cookie-toggle:checked + .cookie-banner {
   display: none;
 }
+  width: 150px;
+  height: 140px;
+  margin-right: 31px;
+}
+
+
+
+
