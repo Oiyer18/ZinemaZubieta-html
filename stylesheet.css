@@ -1,6 +1,17 @@
+/* ==========================================================================
+   1. ESTILO OROKORRAK (GLOBAL STYLES)
+   ========================================================================== */
+
+/* Elementu guztietan tamainaren kalkulua erraztu (padding-a barne hartuz) */
 * {
-    font-family: sans-serif;
-    color: white;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Gorputzeko marjinak kendu */
+body {
+  margin: 0;
 }
 body {background-color: rgb(6, 31, 77);}
 header {
@@ -34,30 +45,51 @@ header span {
     margin-left: 30px;   
 }
 
-header table {
-    max-width: 1000px;
-    max-height: 700px;
+/* Botoiaren gainetik sagua igarotzean (Hover) */
+.saioa-button:hover {
+  background-color: #e4e4e4;
 }
 
-header summary{text-transform: uppercase;
-color: rgb(255, 206, 0);
-margin-left: 20px;}
+#zubieta-oria {color: rgb(255, 206, 0);}
 
-header summary:last-child{margin-left: 2000px;}
+/* ==========================================================================
+   3. HEADER TAULA / ETA DETAILS
+   ========================================================================== */
 
-#zubieta-oria {
-    color: rgb(255, 206, 0);
+.header-taula {
+  max-width: 1000px;
+  margin-left: 30px;
 }
 
-#headerra details summary:nth-child(even) {
-    display: inline;
+/* HTML summary etiketaren estiloak (desplegagarria irekitzeko izenburua) */
+#headerra summary {
+  text-transform: uppercase;
+  color: rgb(255, 206, 0);
+  margin-left: 20px;
+  cursor: pointer;
 }
+
+#headerra details {
+  color: white;
+}
+
+header summary:last-child {
+  margin-left: 2000px;
+}
+/* Zerrendako borobilak kendu */
+#headerra ul {
+  list-style-type: none;
+}
+
+/* ==========================================================================
+   4. NABIGAZIO-MENUA
+   ========================================================================== */
 
 #headerra nav {
-    display: flex;
-    gap: 30px;
-    padding-bottom: 10px;
-    align-items: center;
+  display: flex;
+  gap: 30px; /* Loturen arteko tartea */
+  padding: 10px 30px;
+  align-items: center;
 }
 
 #headerra nav a {
@@ -67,40 +99,99 @@ header summary:last-child{margin-left: 2000px;}
 
 
 .menua-ezkerrean {
-    margin-top: 75px;
-    margin-left: 750px;
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+/* Nabigazioko esteken estilo orokorra */
+.nabigazioa-link {
+  text-decoration: none; /* Azpimarra kentzeko */
+  color: rgb(255, 206, 0);
+  white-space: nowrap; /* Testua bi lerrotan ez banatzeko */
+}
+
+/* Lotura horien hover efektua (koloreak alderantzikatu) */
+
+
+#headerra nav a {
+  text-decoration: none;
+  color: rgb(255, 206, 0);
+}
+
+/* ==========================================================================
+   5. MENU DESPLEGAGARRIA (DROPDOWN)
+   ========================================================================== */
+
+/* Menu desplegarriaren gurasoa finkatu */
+.desplegablea {
+  position: relative;
+}
+
+.menua-ezkerrean {
+  margin-top: 75px;
+  margin-left: 750px;
+  text-transform: uppercase;
 }
 
 .desplegablea {
-    position: relative;
+  position: relative;
 }
 
-.desplegable-menua{
-    display: none;
-    position: absolute;
-    background-color: rgb(16, 51, 116);
-    min-width: 130px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10px;
+.desplegable-menua {
+  display: none;
+  position: absolute;
+  background-color: rgb(16, 51, 116);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10px;
 }
+/* Desplegatzen den menua (hasieran ezkutuan) */
+.desplegable-menua {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none; /* Hasieran ezkutatuta */
+  min-width: 160px;
+  background-color: rgb(16, 51, 116);
+  text-align:justify;
+}
+
+/* Desplegable barruko estekak */
+.desplegable-menua a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(255, 206, 0);
+}
+
+/* Desplegable barruko esteken hover-a */
+.desplegable-menua a:hover {
+  background-color: rgb(255, 206, 0);
+  color: rgb(16, 51, 116);
+}
+
+/* Sagua gainetik igarotzean menu desplegarria erakutsi */
 .desplegablea:hover .desplegable-menua {
-    display: block;
+  display: block;
 }
 
- #headerra li > a{
-    display: block;
-    color: rgb(255, 206, 0);
-    padding: 16px 1px 1px 16px;
-    text-decoration: none;
- }
+#headerra li > a {
+  display: block;
+  color: rgb(255, 206, 0);
+  padding: 16px 1px 1px 16px;
+  text-decoration: none;
+}
 
 #headerra li > a:hover {
-    background-color: rgb(255, 206, 0); /*holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
-    color: rgb(16, 51, 116);
+  background-color: rgb(
+    255,
+    206,
+    0
+  ); /*holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+  color: rgb(16, 51, 116);
+  display: block;
 }
 
 /*=====================NOR GARA ORRIAREN CCS-A============================0*/
