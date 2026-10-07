@@ -13,36 +13,43 @@
 body {
   margin: 0;
 }
-body {background-color: rgb(6, 31, 77);}
-header {
-    background-color: rgb(16, 51, 116);
-    position:relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 220px;
+
+body {
+  background-color: rgb(6, 31, 77);
 }
 
-button{
-    float: right;
-    margin-right: 15px;
-    margin-top: 20px;
-    padding: 0 24px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: rgb(16, 51, 116);
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;}
+header {
+  background-color: rgb(16, 51, 116);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 220px;
+}
 
-button:hover{background-color: 292000;}
+button {
+  float: right;
+  margin-right: 15px;
+  margin-top: 20px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(16, 51, 116);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: 292000;
+}
 
 
 header span {
-    text-transform: uppercase;
-    font-size: 100px;
-    margin-left: 30px;   
+  text-transform: uppercase;
+  font-size: 100px;
+  margin-left: 30px;
 }
 
 /* Botoiaren gainetik sagua igarotzean (Hover) */
@@ -50,7 +57,9 @@ header span {
   background-color: #e4e4e4;
 }
 
-#zubieta-oria {color: rgb(255, 206, 0);}
+#zubieta-oria {
+  color: rgb(255, 206, 0);
+}
 
 /* ==========================================================================
    3. HEADER TAULA / ETA DETAILS
@@ -73,9 +82,10 @@ header span {
   color: white;
 }
 
-header summary:last-child {
-  margin-left: 2000px;
-}
+  header summary:last-child {
+    margin-left: 2000px;
+  }
+
 /* Zerrendako borobilak kendu */
 #headerra ul {
   list-style-type: none;
@@ -87,26 +97,23 @@ header summary:last-child {
 
 #headerra nav {
   display: flex;
-  gap: 30px; /* Loturen arteko tartea */
+  gap: 30px;
+  /* Loturen arteko tartea */
   padding: 10px 30px;
   align-items: center;
 }
 
 #headerra nav a {
-    text-decoration: none;
-    color: rgb(255, 206, 0);
+  text-decoration: none;
+  color: rgb(255, 206, 0);
 }
-
-
-.menua-ezkerrean {
-  text-transform: uppercase;
-}
-
 /* Nabigazioko esteken estilo orokorra */
 .nabigazioa-link {
-  text-decoration: none; /* Azpimarra kentzeko */
+  text-decoration: none;
+  /* Azpimarra kentzeko */
   color: rgb(255, 206, 0);
-  white-space: nowrap; /* Testua bi lerrotan ez banatzeko */
+  white-space: nowrap;
+  /* Testua bi lerrotan ez banatzeko */
 }
 
 /* Lotura horien hover efektua (koloreak alderantzikatu) */
@@ -132,30 +139,17 @@ header summary:last-child {
   text-transform: uppercase;
 }
 
-.desplegablea {
-  position: relative;
-}
-
 .desplegable-menua {
   display: none;
   position: absolute;
   background-color: rgb(16, 51, 116);
-  min-width: 130px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 10px;
-}
-/* Desplegatzen den menua (hasieran ezkutuan) */
-.desplegable-menua {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none; /* Hasieran ezkutatuta */
-  min-width: 160px;
-  background-color: rgb(16, 51, 116);
-  text-align:justify;
+  text-align: justify;
 }
 
 /* Desplegable barruko estekak */
@@ -177,45 +171,51 @@ header summary:last-child {
   display: block;
 }
 
-#headerra li > a {
+#headerra li>a {
   display: block;
   color: rgb(255, 206, 0);
   padding: 16px 1px 1px 16px;
   text-decoration: none;
 }
 
-#headerra li > a:hover {
-  background-color: rgb(
-    255,
-    206,
-    0
-  ); /*holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+#headerra li>a:hover {
+  background-color: rgb(255,
+      206,
+      0);
   color: rgb(16, 51, 116);
   display: block;
 }
 
 /*=====================NOR GARA ORRIAREN CCS-A============================0*/
-span {text-transform: uppercase;
-font-size: 50px;}
-.gara-oria {color: rgb(255, 206, 0);}
-
-h4{text-transform: uppercase;
-text-align: center;
-text-decoration: underline;
-font-weight: bold;
-color: rgb(255, 206, 0);
+span {
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
-.aretoirudia{
+.gara-oria {
+  color: rgb(255, 206, 0);
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(255, 206, 0);
+}
+
+.aretoirudia {
   margin-left: 500px;
   width: 500px;
   height: 325px;
 }
-.argazkialogoa{
+
+.argazkialogoa {
   height: 150px;
   width: 100%;
   object-fit: cover;
 }
+
 /*===================PELIKULEI BURUZKO INFORMAZIOA ORRIAREN CSS-A================*/
 
 .gela-lista {
@@ -239,8 +239,7 @@ color: rgb(255, 206, 0);
 }
 
 .pelikula-info {
-  display: flex;
-  align-items: fixed-start;
+  display: flex;  
   gap: 20px;
 }
 
@@ -262,66 +261,19 @@ color: rgb(255, 206, 0);
   width: 200px;
   margin-top: 20px;
 }
+
 /* ==========================================================================
    6. MAIN / EDUKI NAGUSIA
    ========================================================================== */
 
 .main {
   min-height: 700px;
-  padding-top: 300px; /* Header fixed-ak edukia ez estaltzeko marjina */
+  padding-top: 300px;
+  /* Header fixed-ak edukia ez estaltzeko marjina */
   padding-bottom: 70px;
 }
 
-.h4{
-    text-align: center;
-}
-.h1{
-  text-decoration:underline;
-
-}
-.kolorea{
-  color:rgb(255, 206, 0);
-}
-
-#img img{
-  max-width: 400px;
-  min-width: 400px;
-
-}
-#img{
-text-align: center;
-font-size: larger;
-}
-/* ==========================================================================
-   7. MAIN / ARGAZKIAK
-   ========================================================================== */
-.galeria-pelikulak {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  max-width: 1000px;
-  margin-left: 350px;
-}
-
-.argazkia-item {
-  flex: 1;
-   display: flex;
-  justify-content: center;
-}
-
-.argazkiak1,
-.argazkiak2,
-.argazkiak3 {
-  width: 400px;
-  max-width: 800px;
-  height: 800px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: flex;       
-}
-
-
+  
 /* ==========================================================================
    8. FOOTER / OIN-OHARRA
    ========================================================================== */
@@ -336,7 +288,8 @@ font-size: larger;
 /* Footer-a bi zutabetan banatzeko Grid sistema */
 .footer-contenido {
   display: grid;
-  grid-template-columns: 30% 70%; /* Ezkerreko zutabea %30, eskuinekoa %70 */
+  grid-template-columns: 30% 70%;
+  /* Ezkerreko zutabea %30, eskuinekoa %70 */
   gap: 30px;
 }
 
@@ -444,7 +397,8 @@ font-size: larger;
 
 .footer-redes {
   display: flex;
-  justify-content: flex-end; /* Eskuinean lerrokatzeko */
+  justify-content: flex-end;
+  /* Eskuinean lerrokatzeko */
   gap: 25px;
   margin-right: 100px;
   list-style-type: none;
@@ -498,7 +452,8 @@ font-size: larger;
   position: fixed;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Zazpian guztiz zentratzeko */
+  transform: translateX(-50%);
+  /* Zazpian guztiz zentratzeko */
   width: 90%;
   max-width: 600px;
   background-color: #222;
@@ -508,7 +463,8 @@ font-size: larger;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   font-family: sans-serif;
-  display: block; /* Hasieran ikusi egiten da */
+  display: block;
+  /* Hasieran ikusi egiten da */
 }
 
 .cookie-content {
@@ -547,6 +503,6 @@ font-size: larger;
 }
 
 /* Checkbox-a sakatuta dagoenean (checked), cookie bannerra ezkutatu */
-.cookie-toggle:checked + .cookie-banner {
+.cookie-toggle:checked+.cookie-banner {
   display: none;
 }
