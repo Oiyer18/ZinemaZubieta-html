@@ -9,15 +9,12 @@
   color: white;
 }
 
-/* Gorputzeko marjinak kendu */
+/* Gorputzeko marjinak kendu eta kolorea gehitu*/
 body {
   margin: 0;
-}
-
-body {
   background-color: rgb(6, 31, 77);
 }
-
+/*goiburuaren kolorea, dimentsioak eta posizioa zehazten*/
 header {
   background-color: rgb(16, 51, 116);
   position: relative;
@@ -26,7 +23,7 @@ header {
   left: 0;
   height: 220px;
 }
-
+/*botoiaren posizioa, dimentsioak eta letraren formatoa gehitzen*/
 button {
   float: right;
   margin-right: 15px;
@@ -44,12 +41,15 @@ button {
 button:hover {
   background-color: 292000;
 }
-
-
+/*zinemako izenburuari forma eta kolorea ematen*/
 header span {
   text-transform: uppercase;
   font-size: 100px;
   margin-left: 30px;
+}
+
+#zubieta-oria {
+  color: rgb(255, 206, 0);
 }
 
 /* Botoiaren gainetik sagua igarotzean (Hover) */
@@ -57,34 +57,9 @@ header span {
   background-color: #e4e4e4;
 }
 
-#zubieta-oria {
-  color: rgb(255, 206, 0);
-}
-
 /* ==========================================================================
-   3. HEADER TAULA / ETA DETAILS
+   3. HEADERRAREN MENUA ETA DETAILS
    ========================================================================== */
-
-.header-taula {
-  max-width: 1000px;
-  margin-left: 30px;
-}
-
-/* HTML summary etiketaren estiloak (desplegagarria irekitzeko izenburua) */
-#headerra summary {
-  text-transform: uppercase;
-  color: rgb(255, 206, 0);
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-#headerra details {
-  color: white;
-}
-
-  header summary:last-child {
-    margin-left: 2000px;
-  }
 
 /* Zerrendako borobilak kendu */
 #headerra ul {
