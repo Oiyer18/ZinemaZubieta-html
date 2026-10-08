@@ -56,6 +56,23 @@ header span {
 .saioa-button:hover {
   background-color: #e4e4e4;
 }
+.pelikula-info-egunak {
+  display: flex;
+  margin-left: 25px;
+}
+.pelikula-info-egunak h3{
+  color:rgb(255, 206, 0);
+  text-decoration: underline;
+  text-align: center;
+}
+.pelikula-info-egunak p{
+  margin-left:15px;
+  margin-top: 100px;
+  font-size: 25px;
+}
+.pelikula-info-egunak img{
+  width: 200px;
+}
 
 #zubieta-oria, .kolorea {
   color: rgb(255, 206, 0);
