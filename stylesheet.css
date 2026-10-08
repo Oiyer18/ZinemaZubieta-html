@@ -61,6 +61,12 @@ header span {
 .saioa-button:hover {
   background-color: #e4e4e4;
 }
+/*headerran dagoen logoaren dimentsioak eta posizioa*/
+.logotipogoiburua {
+  float: inline-start;
+  display: flex;
+  width: 300px;
+}
 /*  Egun bakoitzean pelikulen (tituloa eta karatula) eta deskripzioa bata bestearen ondoan agertzea */
 .pelikula-info-egunak {
   display: flex;
