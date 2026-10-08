@@ -1,23 +1,23 @@
 /* ==========================================================================
-   1. ESTILO OROKORRAK (GLOBAL STYLES)
+  ESTILO OROKORRAK (GLOBAL STYLES)
    ========================================================================== */
 
-/* Elementu guztietan tamainaren kalkulua erraztu (padding-a barne hartuz) */
+/* Elementu guztietan tamainaren kalkulua, testuaren iturria eta kolorea jartzen*/
 * {
   box-sizing: border-box;
   font-family: sans-serif;
   color: white;
+
 }
 
-/* Gorputzeko marjinak kendu */
+/* Gorputzeko marjinak kendu eta kolorea gehitu*/
 body {
   margin: 0;
-}
-
-body {
   background-color: rgb(6, 31, 77);
+  overflow-x: hidden;
 }
 
+/*goiburuaren kolorea, dimentsioak eta posizioa zehazten*/
 header {
   background-color: rgb(16, 51, 116);
   position: relative;
@@ -27,6 +27,7 @@ header {
   height: 220px;
 }
 
+/*botoiaren posizioa, dimentsioak eta letraren formatoa gehitzen*/
 button {
   float: right;
   margin-right: 15px;
@@ -45,11 +46,15 @@ button:hover {
   background-color: 292000;
 }
 
-
+/*zinemako izenburuari forma eta kolorea ematen*/
 header span {
   text-transform: uppercase;
   font-size: 100px;
   margin-left: 30px;
+}
+
+#zubieta-oria {
+  color: rgb(255, 206, 0);
 }
 
 /* Botoiaren gainetik sagua igarotzean (Hover) */
@@ -78,34 +83,9 @@ header span {
   width: 200px;
 }
 
-#zubieta-oria, .kolorea {
-  color: rgb(255, 206, 0);
-}
-
 /* ==========================================================================
-   3. HEADER TAULA / ETA DETAILS
+  HEADERRAREN MENUA ETA DETAILS
    ========================================================================== */
-
-.header-taula {
-  max-width: 1000px;
-  margin-left: 30px;
-}
-
-/* HTML summary etiketaren estiloak (desplegagarria irekitzeko izenburua) */
-#headerra summary {
-  text-transform: uppercase;
-  color: rgb(255, 206, 0);
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-#headerra details {
-  color: white;
-}
-
-  header summary:last-child {
-    margin-left: 2000px;
-  }
 
 /* Zerrendako borobilak kendu */
 #headerra ul {
@@ -113,7 +93,7 @@ header span {
 }
 
 /* ==========================================================================
-   4. NABIGAZIO-MENUA
+   NABIGAZIO-MENUA
    ========================================================================== */
 
 #headerra nav {
@@ -124,42 +104,23 @@ header span {
   align-items: center;
 }
 
-#headerra nav a {
-  text-decoration: none;
-  color: rgb(255, 206, 0);
-}
-/* Nabigazioko esteken estilo orokorra */
-.nabigazioa-link {
-  text-decoration: none;
-  /* Azpimarra kentzeko */
-  color: rgb(255, 206, 0);
-  white-space: nowrap;
-  /* Testua bi lerrotan ez banatzeko */
-}
-
-/* Lotura horien hover efektua (koloreak alderantzikatu) */
-
-
+/*esteken dekorazioa zehazten*/
 #headerra nav a {
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
 
 /* ==========================================================================
-   5. MENU DESPLEGAGARRIA (DROPDOWN)
+   MENU DESPLEGAGARRIA (DROPDOWN)
    ========================================================================== */
-
-/* Menu desplegarriaren gurasoa finkatu */
-.desplegablea {
-  position: relative;
-}
-
+/*menuaren posizioa jartzen*/
 .menua-ezkerrean {
   margin-top: 75px;
   margin-left: 750px;
   text-transform: uppercase;
 }
 
+/*menua ezkutuan egotea, listaren formatua eta testuaren kolorea aldatzen*/
 .desplegable-menua {
   display: none;
   position: absolute;
@@ -185,6 +146,7 @@ header span {
 .desplegable-menua a:hover {
   background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
+  transition: background-color 0.2s;
 }
 
 /* Sagua gainetik igarotzean menu desplegarria erakutsi */
@@ -192,13 +154,14 @@ header span {
   display: block;
 }
 
+/*header barruan, lista barruan dauden esteka guztien kolorea, formatua eta padding-a zehazten*/
 #headerra li>a {
-  display: block;
   color: rgb(255, 206, 0);
   padding: 16px 1px 1px 16px;
   text-decoration: none;
 }
 
+/*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
 #headerra li>a:hover {
   background-color: rgb(255,
       206,
@@ -207,16 +170,21 @@ header span {
   display: block;
 }
 
-/*=====================NOR GARA ORRIAREN CCS-A============================0*/
+/*=====================NOR GARA ORRIAREN CCS-A============================*/
+/*========================================================================*/
+
+/*espan guztien tamaina eta formatoa adierazi*/
 span {
   text-transform: uppercase;
   font-size: 50px;
 }
 
+/*testuaren bigarren hitza oria jarri*/
 .gara-oria {
   color: rgb(255, 206, 0);
 }
 
+/*h4 guztien formatoa, tamaina eta kolorea aldatu*/
 h4 {
   text-transform: uppercase;
   text-align: center;
@@ -225,12 +193,14 @@ h4 {
   color: rgb(255, 206, 0);
 }
 
+/*kokapena eta tamaina adierazi*/
 .aretoirudia {
   margin-left: 500px;
   width: 500px;
   height: 325px;
 }
 
+/*tamaina eta formatua*/
 .argazkialogoa {
   height: 150px;
   width: 100%;
@@ -238,7 +208,9 @@ h4 {
 }
 
 /*===================PELIKULEI BURUZKO INFORMAZIOA ORRIAREN CSS-A================*/
+/*===============================================================================*/
 
+/*kolorea, tamaina eta formatua adierazi*/
 .gela-lista {
   color: rgb(255, 206, 0);
   font-size: 30px;
@@ -246,12 +218,14 @@ h4 {
   text-transform: uppercase;
 }
 
+/*formatuaren tamaina eta listaren arteko tarteak adierazi*/
 #gela-lista-ul li {
   padding: 1%;
   text-transform: capitalize;
   font-size: 30px;
 }
 
+/*kolorea tamaina eta formatua adierazi*/
 .pelikula-lista {
   color: rgb(255, 206, 0);
   font-size: 30px;
@@ -259,17 +233,20 @@ h4 {
   text-transform: uppercase;
 }
 
+/*testua eta argazkia moldatzen*/
 .pelikula-info {
-  display: flex;  
+  display: flex;
   gap: 20px;
 }
 
+/*listaren item-ak sailkatzen*/
 #pelikula-lista-ul li {
   padding: 1%;
   text-transform: capitalize;
   font-size: 30px;
 }
 
+/*testuen formatoa, tamaina eta tarteak adierazi*/
 #pelikula-lista-ul p {
   text-transform: lowercase;
   font-size: 25px;
@@ -277,6 +254,7 @@ h4 {
   margin-right: 200px;
 }
 
+/*tamaina eta tarteak adierazi*/
 #pelikula-lista-ul img {
   height: 300px;
   width: 200px;
@@ -284,21 +262,90 @@ h4 {
 }
 
 /* ==========================================================================
-   6. MAIN / EDUKI NAGUSIA
+  MAIN / EDUKI NAGUSIA
    ========================================================================== */
 
+/*orri nagusiaren tarteak adierazi*/
 .main {
   min-height: 700px;
-  padding-top: 300px;
-  /* Header fixed-ak edukia ez estaltzeko marjina */
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 
-  
+/*Tituloaren tamaina adierazi eta kokapena*/
+.h4 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/*kokapena, tamaina, formatoa eta tarteak zehazten*/
+.galeria-pelikulak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin-left: 250px;
+}
+
+/*karrusel baten itxura lortzeko, erdiko argazkiari dimentsio handiagoak jartzen diogu*/
+.argazkiak2 {
+  width: 400px;
+  max-width: 800px;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: flex;
+  margin: 20px;
+}
+
+/*karrusel baten itxura lortzeko, hertzetan dauden argazkien tamaina txikitzen digu*/
+.argazkiak1,
+.argazkiak3 {
+  width: 400px;
+  max-width: 800px;
+  height: 740px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: flex;
+  margin: 20px;
+}
+
+/*argazkiak errnkadan jarri eta tamaina zehaztu*/
+.argazkia-item {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 400px;
+
+}
+
+/*tamaina adierazi*/
+.zinema-trans {
+  height: 500px;
+  width: 1000px;
+}
+
+/*testua argazkiaren ondoan jarri*/
+.iragarkia {
+  display: flex;
+  margin-top: 50px;
+}
+
+/*testuaren formatua eta lerroartea zehaztu*/
+.zinema-txt {
+  font-size: 33px;
+  max-height: 600px;
+  margin-left: -185px;
+  color: rgb(255, 206, 0);
+  line-height: 2.2;
+}
+
 /* ==========================================================================
-   8. FOOTER / OIN-OHARRA
+   FOOTER / OIN-OHARRA
    ========================================================================== */
 
+/*footer guztiari kolore formatua, testu formatua eta tarteak adierazi*/
 .footer {
   background-color: #173d7a;
   color: white;
@@ -320,22 +367,26 @@ h4 {
   flex-direction: column;
 }
 
+/*logoaren formatua*/
 .footer-logo {
   width: 350px;
   max-width: 100%;
   margin-bottom: 25px;
 }
 
+/*testuaren formatua eta tarteak*/
 .footer-info h3 {
   font-size: 20px;
   margin-bottom: 12px;
 }
 
+/*listaren formatua zehaztu*/
 .footer-listadatuak {
   list-style-type: none;
   padding: 0;
 }
 
+/*footer-ean dauden p guztien formatua*/
 .footer-info p {
   margin: 6px 0;
   font-size: 16px;
@@ -344,6 +395,7 @@ h4 {
 }
 
 /* --- FOOTER ESKUINA --- */
+/*eskubian dagoen elementu guztien formatoa*/
 .footer-derecha {
   display: flex;
   flex-direction: column;
@@ -351,9 +403,10 @@ h4 {
 }
 
 /* ==========================================================================
-   9. NEWSLETTER ATALA
+   NEWSLETTER ATALA
    ========================================================================== */
 
+/*newsletterraren kolorea, borobilpena eta tarteak zehaztu*/
 .newsletter {
   background-color: #ffdc4a;
   border-radius: 22px;
@@ -362,6 +415,7 @@ h4 {
   margin-right: 30px;
 }
 
+/*newsletter atalaren h2-en tamaina tarteak eta kolorea*/
 .newsletter h2 {
   font-size: 32px;
   margin: 0 0 38px;
@@ -389,6 +443,7 @@ h4 {
   outline: none;
 }
 
+/*idazteko eremuan dagoen testuaren kolorea*/
 .newsletter-input::placeholder {
   color: #08285c;
   opacity: 1;
@@ -413,7 +468,7 @@ h4 {
 }
 
 /* ==========================================================================
-   10. SARE SOZIALAK
+   SARE SOZIALAK
    ========================================================================== */
 
 .footer-redes {
@@ -425,16 +480,18 @@ h4 {
   list-style-type: none;
 }
 
+/*sare sozialen dimentsioak zehazten*/
 .footer-redes-img {
   width: 70px;
   height: 70px;
-  object-fit: contain;
+  border-radius: 10px;
 }
 
 /* ==========================================================================
-   11. FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
+FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
    ========================================================================== */
 
+/*copyright-aren mezuaren tarteak eta antolakuntza*/
 .footer-bottom {
   margin-top: 30px;
   padding-top: 15px;
@@ -445,6 +502,7 @@ h4 {
   gap: 20px;
 }
 
+/*esteken antolakuntza eta kolorea*/
 .footer-enlaces {
   display: flex;
   gap: 20px;
@@ -455,15 +513,17 @@ h4 {
   text-decoration: none;
 }
 
+/*hover-aren testu aldaketa*/
 .footer-enlace:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(255, 206, 0);
 }
 
 /* ==========================================================================
-   12. COOKIEN BANNERRA (CSS BAKARRIK ERABILTZEN DUEN MEKANISMOA)
+  COOKIEN BANNERRA (CSS BAKARRIK ERABILTZEN DUEN MEKANISMOA)
    ========================================================================= */
 
-/* Checkbox-a ezkutatu, bistaratzeko egoera kontrolatzeko bakarrik baita */
+/* Checkbox-a ezkutatu, bistaratzeko egoera kontrolatzeko bakarrik*/
 .cookie-toggle {
   display: none;
 }
@@ -482,12 +542,12 @@ h4 {
   padding: 16px 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
   font-family: sans-serif;
   display: block;
   /* Hasieran ikusi egiten da */
 }
 
+/*cookie-en antolakuntza zehaztu*/
 .cookie-content {
   display: flex;
   align-items: center;
@@ -495,6 +555,7 @@ h4 {
   gap: 16px;
 }
 
+/*testuaren formatua jartzen*/
 .cookie-content p {
   margin: 0;
   font-size: 14px;
@@ -502,8 +563,8 @@ h4 {
 }
 
 .cookie-content a {
-  color: #4da3ff;
-  text-decoration: underline;
+  color: rgb(255, 206, 0);
+  text-decoration: none;
 }
 
 /* Onartzeko botoiaren estiloa */
@@ -515,7 +576,6 @@ h4 {
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
-  white-space: nowrap;
   transition: background-color 0.2s;
 }
 
