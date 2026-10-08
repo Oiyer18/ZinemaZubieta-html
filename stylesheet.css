@@ -56,21 +56,24 @@ header span {
 .saioa-button:hover {
   background-color: #e4e4e4;
 }
+/*  Egun bakoitzean pelikulen (tituloa eta karatula) eta deskripzioa bata bestearen ondoan agertzea */
 .pelikula-info-egunak {
   display: flex;
   margin-left: 25px;
 }
+/* Egun bakoitzeko pelikulen tituloa behar den bezela agertzea*/
 .pelikula-info-egunak h3{
   color:rgb(255, 206, 0);
   text-decoration: underline;
   text-align: center;
 }
+/* Egon bakoitzeko pelikulen sinopsia behar den bezela agertzea*/
 .pelikula-info-egunak p{
   margin-left:15px;
   margin-top: 150px;
   font-size: 25px;
-  
 }
+/*Egun bakoitzeko pelikulen karatularen tamaina kontrolatu*/
 .pelikula-info-egunak img{
   width: 200px;
 }
