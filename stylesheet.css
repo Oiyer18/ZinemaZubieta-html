@@ -53,7 +53,7 @@ header span {
   margin-left: 30px;
 }
 
-#zubieta-oria, .kolorea{
+#zubieta-oria {
   color: rgb(255, 206, 0);
 }
 
@@ -65,7 +65,10 @@ header span {
 .logotipogoiburua {
   float: inline-start;
   display: flex;
+  object-fit: cover;
+  max-height: 100px;
   width: 300px;
+
 }
 /*  Egun bakoitzean pelikulen (tituloa eta karatula) eta deskripzioa bata bestearen ondoan agertzea */
 .pelikula-info-egunak {
@@ -88,6 +91,8 @@ header span {
 .pelikula-info-egunak img{
   width: 200px;
 }
+
+.kolorea{color: rgb(255, 206, 0);}
 
 /* ==========================================================================
   HEADERRAREN MENUA ETA DETAILS
