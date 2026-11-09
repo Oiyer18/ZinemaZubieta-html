@@ -33,7 +33,42 @@
      <a href="zinemaetagizartea.html" class="gizartea-border">zinema eta gizartea</a>
     </nav>
   </header>
-
+  <main>
+    <span>egin lan </span><span class="gurekin_oria">gurekin</span>
+    <div class="langaldetegi">
+      <form method="post">
+        <div class="izenabizen">
+          <label for="izbez" class="izbez" name="izbez">izen <span class=horia> abizenak</span></label><br>
+          <input type="text" class="izbez" name="izbez" required placeholder="IZENA" maxlength="10">
+          <input type="text" class="izbez" name="izbez" required placeholder="ABIZENA 1" maxlength="10">
+          <input type="text" class="izbez" name="izbez" required placeholder="ABIZENA 2" maxlength="10">
+        </div>
+        <div class= "ID">
+          <label for="identifikadore" class="identif" name="identid">identifikadore <span>pertsonala</span></label><br>
+          <input type="text" name="identid" class="identif" placeholder="12345678A" required pattern="{0-9}[8]-{A-Z}[1]">
+          <input type="tel" name="identid" class="telef" placeholder="TELEFONOA" required>
+        </div>
+        <div class="helbidea">
+          <label for="helbidea" class="helb" name="helbidea">helbidea</label><br>
+          <input type="text" name="helbidea" class="kalea" required placeholder="KALEA">
+          <input type="number" name="helbidea" class="kalea" required placeholder="ZENBAKIA">
+          <input type="text" name="helbidea" class="kalea" required placeholder="PISUA ETA LETRA">
+          <input type="number" name="helbidea" class="kalea" required placeholder="KODE POSTALA">
+        </div>
+        <div class="deskrib">
+          <label for="deskribapena" class="deskriv" name="deskribapena">labur deskribatu <span>zaitzez</span> </label><br>
+          <textarea id="deskribapena" class="deskriv" name="deskribapena" maxlength="500" rows="10" cols="100"></textarea>
+        </div>
+        <div class="kurrikulum">
+          <label for="kurrikulum" class="kurrikulum">kurrikulum-a <span>atxikitu:</span></label>
+          <input type="file" name="kurrikulum" class="fitxategia">
+        </div>
+        
+           <input type="submit" value="BIDALI" class="bidali">
+        
+      </form>
+    </div>
+  </main>
   <footer class="footer">
     <div class="footer-contenido">
       <!-- EZKERREKO ZATIA -->

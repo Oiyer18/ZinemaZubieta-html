@@ -130,9 +130,62 @@ nav .menua-ezkerrean{
   color: rgb(16, 51, 116);
   transition: background-color 0.2s;
   border-radius: 5px;
-  
+  padding: 7px;
+}
+.langaldetegi{
+  margin-left: 100px;
+}
+.langaldetegi label{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+.langaldetegi span{
+  color:rgb(255, 206, 0);
+  font-size: 25px;
+}
+.langaldetegi div{
+  margin-top: 20px;
+}
+.langaldetegi input:not(.bidali):not(.fitxategia){
+  margin-top: 20px;
+  border: 3px solid color rgb(255, 206, 0);
+  background-color: rgb(19, 38, 84);
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+ margin-right: 50px;
+}
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fitxategia{
+  margin-left: 15px;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
+.langaldetegi .bidali{
+  margin-left: 600px;
+  margin-bottom: 50px;
+}
+input[type="file"]{
+  border: 3px solid color rgb(255, 206, 0);
+  padding: 3px;
+  margin-left: 20px;
+}
+.langaldetegi textarea{
+  border: 3px solid color rgb(255, 206, 0);
+  border-radius: 15px;
+  background-color: rgb(19, 38, 84);
+  margin-top: 20px;
+}
 /*esteken dekorazioa zehazten*/
 #headerra nav a:not(.hemen-gaude){
   text-decoration: none;
@@ -181,7 +234,7 @@ nav .menua-ezkerrean{
 /* Desplegable barruko esteken hover-a */
 .desplegable-menua a:hover {
   background-color: rgb(255, 206, 0);
-  color: rgb(16, 51, 116);
+  color: rgb(16, 51, 116);rgb:(6, 31, 77);
   transition: background-color 0.2s;
 }
 
@@ -213,7 +266,7 @@ nav .menua-ezkerrean{
 /*espan guztien tamaina eta formatoa adierazi*/
 span {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 50px; 
 }
 
 /*testuaren bigarren hitza oria jarri*/
