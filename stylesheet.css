@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* Elementu guztietan tamainaren kalkulua, testuaren iturria eta kolorea jartzen*/
-* {
+*{
   box-sizing: border-box;
   font-family: sans-serif;
   color: white;
@@ -91,7 +91,9 @@ header span {
 .pelikula-info-egunak img{
   width: 200px;
 }
-
+.gurekin_oria{
+  color:rgb(255, 206, 0);
+}
 .kolorea{color: rgb(255, 206, 0);}
 
 /* ==========================================================================
@@ -116,6 +118,10 @@ header span {
 }
 nav .menua-ezkerrean{
   text-align: center;
+}
+.saiohasi{
+  color:rgb(16, 51, 116);
+  text-decoration: none;
 }
 /*hedearreko menutik xagua pasatzean ezberdindu*/
 .menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude){
@@ -216,12 +222,46 @@ span {
 }
 
 /*h4 guztien formatoa, tamaina eta kolorea aldatu*/
-h4 {
+h4:not(.erregistro_izenburu) {
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
   color: rgb(255, 206, 0);
+}
+.erregistro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.erregistro_txt{
+  max-width: 50%;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+.erregistro h4{
+  font-size: larger;
+}
+.erregistro hr{
+  color:rgb(255, 206, 0);
+}
+.email{
+  border: 30px color rgb(255, 206, 0);
+  background-color: rgb(6, 31, 77) ;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+}
+.bidali{
+  color: rgb(6, 31, 77);
+  background-color: rgb(255, 206, 0);
+  border-radius: 10px;
+  width: 125px;
+  height: 30px;
+  margin-top: 45px;
 }
 
 /*kokapena eta tamaina adierazi*/
