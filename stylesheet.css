@@ -127,7 +127,7 @@ header span {
 /*menuaren posizioa jartzen*/
 .menua-ezkerrean {
   margin-top: 75px;
-  margin-left: 750px;
+  text-align: center;
   text-transform: uppercase;
 }
 
