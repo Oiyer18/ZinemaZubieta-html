@@ -111,15 +111,28 @@ header span {
   display: flex;
   gap: 30px;
   /* Loturen arteko tartea */
-  padding: 10px 30px;
+  margin-left: 200px;
   align-items: center;
+}
+nav .menua-ezkerrean{
+  text-align: center;
+}
+/*hedearreko menutik xagua pasatzean ezberdindu*/
+.menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude){
+  text-decoration: underline;
+  background-color: rgb(255, 206, 0, 0.2);
+  color: rgb(16, 51, 116);
+  transition: background-color 0.2s;
+  border-radius: 5px;
+  
 }
 
 /*esteken dekorazioa zehazten*/
-#headerra nav a {
+#headerra nav a:not(.hemen-gaude){
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
+
 
 /* ==========================================================================
    MENU DESPLEGAGARRIA (DROPDOWN)
@@ -127,8 +140,14 @@ header span {
 /*menuaren posizioa jartzen*/
 .menua-ezkerrean {
   margin-top: 75px;
+  display: flex;
   text-align: center;
   text-transform: uppercase;
+}
+.hemen-gaude{
+  text-decoration: underline;
+  font-weight: bold;
+  color:rgb(255, 206, 0) ;
 }
 
 /*menua ezkutuan egotea, listaren formatua eta testuaren kolorea aldatzen*/
@@ -171,6 +190,7 @@ header span {
   padding: 16px 1px 1px 16px;
   text-decoration: none;
 }
+
 
 /*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
 #headerra li>a:hover {
