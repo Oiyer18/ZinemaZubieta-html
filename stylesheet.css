@@ -115,9 +115,11 @@ header span {
   /* Loturen arteko tartea */
   margin-left: 200px;
   align-items: center;
+margin-bottom: 30px;
 }
-nav .menua-ezkerrean{
-  text-align: center;
+nav a{
+  padding:5px;
+
 }
 .saiohasi{
   color:rgb(16, 51, 116);
@@ -130,7 +132,7 @@ nav .menua-ezkerrean{
   color: rgb(16, 51, 116);
   transition: background-color 0.2s;
   border-radius: 5px;
-  padding: 7px;
+ 
 }
 .langaldetegi{
   margin-left: 100px;
@@ -303,7 +305,7 @@ h4:not(.erregistro_izenburu) {
 }
 .email{
   border: 30px color rgb(255, 206, 0);
-  background-color: rgb(6, 31, 77) ;
+  background-color: rgb(19, 38, 84) ;
   width: 500px;
   height: 40px;
   text-align: center;
