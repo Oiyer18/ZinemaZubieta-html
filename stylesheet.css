@@ -332,6 +332,13 @@ h4:not(.erregistro_izenburu) {
 .erregistro hr{
   color:rgb(255, 206, 0);
 }
+.hr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+}
 .gizarteori{
   color: rgb(255, 206, 0)
 }
