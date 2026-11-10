@@ -10,6 +10,25 @@
   padding: 0%;
   margin:0%;
 }
+.norinfo{
+  display: flex;
+  flex-direction: column;
+  gap:60px;
+  text-align: center;
+}
+.norinfo p{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: large;
+}
+.norinfo h4{
+  font-size: large;
+}
+.norinfo img{
+  margin-top: 20px;
+  width: 700px;
+}
 
 /* Gorputzeko marjinak kendu eta kolorea gehitu*/
 body {
@@ -332,12 +351,6 @@ h4:not(.erregistro_izenburu) {
   margin-top: 45px;
 }
 
-/*kokapena eta tamaina adierazi*/
-.aretoirudia {
-  margin-left: 500px;
-  width: 500px;
-  height: 325px;
-}
 
 /*tamaina eta formatua*/
 .argazkialogoa {
@@ -589,11 +602,18 @@ h4:not(.erregistro_izenburu) {
   text-transform: uppercase;
 
 }
+.edukia p{
+  margin-top: 10px;
+}
+
+.irisgarritasuna{
+  margin-top: 30px;
+}
 .edukia{
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:5px;
+  gap:30px;
 }
 .edukia p{
   font-size: larger;
@@ -602,6 +622,7 @@ h4:not(.erregistro_izenburu) {
 }
 .edukia img{
   width: 500px;
+  margin-top: 20px;
 }
 .edukia .komunitatea{
   margin-bottom: 30px;
