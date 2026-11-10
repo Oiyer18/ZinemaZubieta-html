@@ -7,7 +7,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
   color: white;
-
+  padding: 0%;
+  margin:0%;
 }
 
 /* Gorputzeko marjinak kendu eta kolorea gehitu*/
@@ -20,18 +21,17 @@ body {
 /*goiburuaren kolorea, dimentsioak eta posizioa zehazten*/
 header {
   background-color: rgb(16, 51, 116);
-  position: relative;
   width: 100%;
-  top: 0;
+  top: 10;
   left: 0;
-  height: 220px;
+  height: 180px;
 }
 
 /*botoiaren posizioa, dimentsioak eta letraren formatoa gehitzen*/
 button {
   float: right;
-  margin-right: 15px;
-  margin-top: 20px;
+  margin-right: 40px;
+  margin-top: -40px;
   padding: 0 24px;
   border: none;
   border-radius: 20px;
@@ -47,10 +47,12 @@ button:hover {
 }
 
 /*zinemako izenburuari forma eta kolorea ematen*/
-header span {
+header h1 {
   text-transform: uppercase;
-  font-size: 100px;
-  margin-left: 30px;
+  font-size: 50px;
+  margin-left: 550px;
+  margin-right: 550px;
+  text-align: center;
 }
 
 #zubieta-oria {
@@ -68,6 +70,7 @@ header span {
   object-fit: cover;
   max-height: 100px;
   width: 300px;
+  
 
 }
 /*  Egun bakoitzean pelikulen (tituloa eta karatula) eta deskripzioa bata bestearen ondoan agertzea */
@@ -115,7 +118,7 @@ header span {
   /* Loturen arteko tartea */
   margin-left: 200px;
   align-items: center;
-margin-bottom: 30px;
+
 }
 nav a{
   padding:5px;
@@ -133,6 +136,12 @@ nav a{
   transition: background-color 0.2s;
   border-radius: 5px;
  
+}
+.pelikuleispan{
+  margin-top: 15px;
+  margin-left:10px;
+  display: flex;
+  gap:10px;
 }
 .langaldetegi{
   margin-left: 100px;
@@ -250,6 +259,7 @@ input[type="file"]{
   color: rgb(255, 206, 0);
   padding: 16px 1px 1px 16px;
   text-decoration: none;
+  display: flex;
 }
 
 
@@ -266,7 +276,7 @@ input[type="file"]{
 /*========================================================================*/
 
 /*espan guztien tamaina eta formatoa adierazi*/
-span {
+span:not(.horia) {
   text-transform: uppercase;
   font-size: 50px; 
 }
@@ -302,6 +312,9 @@ h4:not(.erregistro_izenburu) {
 }
 .erregistro hr{
   color:rgb(255, 206, 0);
+}
+.gizarteori{
+  color: rgb(255, 206, 0)
 }
 .email{
   border: 30px color rgb(255, 206, 0);
@@ -568,7 +581,31 @@ h4:not(.erregistro_izenburu) {
   color: #08285c;
   outline: none;
 }
+.horia{
+  color:rgb(255, 206, 0);
+}
+.edukia h3{
+  font-size: 30px;
+  text-transform: uppercase;
 
+}
+.edukia{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap:5px;
+}
+.edukia p{
+  font-size: larger;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.edukia img{
+  width: 500px;
+}
+.edukia .komunitatea{
+  margin-bottom: 30px;
+}
 /*idazteko eremuan dagoen testuaren kolorea*/
 .newsletter-input::placeholder {
   color: #08285c;
