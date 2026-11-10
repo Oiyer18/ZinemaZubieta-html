@@ -71,6 +71,7 @@ header h1 {
   font-size: 50px;
   margin-left: 550px;
   margin-right: 550px;
+ 
   text-align: center;
 }
 
@@ -776,5 +777,8 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
 
 /* Checkbox-a sakatuta dagoenean (checked), cookie bannerra ezkutatu */
 .cookie-toggle:checked+.cookie-banner {
+  display: none;
+}
+.menu-checkbox {
   display: none;
 }
