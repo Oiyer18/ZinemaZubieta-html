@@ -3,29 +3,29 @@
    ========================================================================== */
 
 /* Elementu guztietan tamainaren kalkulua, testuaren iturria eta kolorea jartzen*/
-*{
+* {
   box-sizing: border-box;
   font-family: sans-serif;
   color: white;
   padding: 0%;
-  margin:0%;
+  margin: 0%;
 }
-.norinfo{
+.norinfo {
   display: flex;
   flex-direction: column;
-  gap:60px;
+  gap: 60px;
   text-align: center;
 }
-.norinfo p{
+.norinfo p {
   margin-right: 100px;
   margin-left: 100px;
   margin-top: 40px;
   font-size: large;
 }
-.norinfo h4{
+.norinfo h4 {
   font-size: large;
 }
-.norinfo img{
+.norinfo img {
   margin-top: 20px;
   width: 700px;
 }
@@ -89,10 +89,8 @@ header h1 {
   object-fit: cover;
   max-height: 100px;
   width: 300px;
-  
-
 }
-.ezerakutsi{
+.ezerakutsi {
   display: none;
 }
 /*  Egun bakoitzean pelikulen (tituloa eta karatula) eta deskripzioa bata bestearen ondoan agertzea */
@@ -101,25 +99,27 @@ header h1 {
   margin-left: 25px;
 }
 /* Egun bakoitzeko pelikulen tituloa behar den bezela agertzea*/
-.pelikula-info-egunak h3{
-  color:rgb(255, 206, 0);
+.pelikula-info-egunak h3 {
+  color: rgb(255, 206, 0);
   text-decoration: underline;
   text-align: center;
 }
 /* Egon bakoitzeko pelikulen sinopsia behar den bezela agertzea*/
-.pelikula-info-egunak p{
-  margin-left:15px;
+.pelikula-info-egunak p {
+  margin-left: 15px;
   margin-top: 150px;
   font-size: 25px;
 }
 /*Egun bakoitzeko pelikulen karatularen tamaina kontrolatu*/
-.pelikula-info-egunak img{
+.pelikula-info-egunak img {
   width: 200px;
 }
-.gurekin_oria{
-  color:rgb(255, 206, 0);
+.gurekin_oria {
+  color: rgb(255, 206, 0);
 }
-.kolorea{color: rgb(255, 206, 0);}
+.kolorea {
+  color: rgb(255, 206, 0);
+}
 
 /* ==========================================================================
   HEADERRAREN MENUA ETA DETAILS
@@ -140,47 +140,44 @@ header h1 {
   /* Loturen arteko tartea */
   margin-left: 200px;
   align-items: center;
-
 }
-nav a{
-  padding:5px;
-
+nav a {
+  padding: 5px;
 }
-.saiohasi{
-  color:rgb(16, 51, 116);
+.saiohasi {
+  color: rgb(16, 51, 116);
   text-decoration: none;
 }
 /*hedearreko menutik xagua pasatzean ezberdindu*/
-.menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude){
+.menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
   text-decoration: underline;
   background-color: rgb(255, 206, 0, 0.2);
   color: rgb(16, 51, 116);
   transition: background-color 0.2s;
   border-radius: 5px;
- 
 }
-.pelikuleispan{
+.pelikuleispan {
   margin-top: 15px;
-  margin-left:10px;
+  margin-left: 10px;
   display: flex;
-  gap:10px;
+  gap: 10px;
 }
-.langaldetegi{
+.langaldetegi {
   margin-left: 100px;
 }
-.langaldetegi label{
+.langaldetegi label {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: bold;
 }
-.langaldetegi span{
-  color:rgb(255, 206, 0);
+.langaldetegi span {
+  color: rgb(255, 206, 0);
   font-size: 25px;
 }
-.langaldetegi div{
+.langaldetegi div {
   margin-top: 20px;
 }
-.langaldetegi input:not(.bidali):not(.fitxategia){
+.langaldetegi input:not(.bidali):not(.fitxategia) {
   margin-top: 20px;
   border: 3px solid color rgb(255, 206, 0);
   background-color: rgb(19, 38, 84);
@@ -188,7 +185,7 @@ nav a{
   width: 200px;
   height: 40px;
   text-align: center;
- margin-right: 50px;
+  margin-right: 50px;
 }
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
@@ -196,7 +193,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.fitxategia{
+.fitxategia {
   margin-left: 15px;
 }
 /* Firefox */
@@ -204,27 +201,26 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.langaldetegi .bidali{
+.langaldetegi .bidali {
   margin-left: 600px;
   margin-bottom: 50px;
 }
-input[type="file"]{
+input[type="file"] {
   border: 3px solid color rgb(255, 206, 0);
   padding: 3px;
   margin-left: 20px;
 }
-.langaldetegi textarea{
+.langaldetegi textarea {
   border: 3px solid color rgb(255, 206, 0);
   border-radius: 15px;
   background-color: rgb(19, 38, 84);
   margin-top: 20px;
 }
 /*esteken dekorazioa zehazten*/
-#headerra nav a:not(.hemen-gaude){
+#headerra nav a:not(.hemen-gaude) {
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
-
 
 /* ==========================================================================
    MENU DESPLEGAGARRIA (DROPDOWN)
@@ -236,10 +232,10 @@ input[type="file"]{
   text-align: center;
   text-transform: uppercase;
 }
-.hemen-gaude{
+.hemen-gaude {
   text-decoration: underline;
   font-weight: bold;
-  color:rgb(255, 206, 0) ;
+  color: rgb(255, 206, 0);
 }
 
 /*menua ezkutuan egotea, listaren formatua eta testuaren kolorea aldatzen*/
@@ -278,13 +274,9 @@ input[type="file"]{
 
 /*header barruan, lista barruan dauden esteka guztien kolorea, formatua eta padding-a zehazten*/
 
-
-
 /*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
-#headerra li>a:hover:not(.q):not(.hemen-gaude) {
-  background-color: rgb(255,
-      206,
-      0);
+#headerra li > a:hover:not(.q):not(.hemen-gaude) {
+  background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
   display: block;
 }
@@ -295,7 +287,7 @@ input[type="file"]{
 /*espan guztien tamaina eta formatoa adierazi*/
 span:not(.horia) {
   text-transform: uppercase;
-  font-size: 50px; 
+  font-size: 50px;
 }
 
 /*testuaren bigarren hitza oria jarri*/
@@ -311,7 +303,7 @@ h4:not(.erregistro_izenburu) {
   font-weight: bold;
   color: rgb(255, 206, 0);
 }
-.erregistro{
+.erregistro {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -319,35 +311,35 @@ h4:not(.erregistro_izenburu) {
   margin-top: 75px;
   margin-bottom: 75px;
 }
-.erregistro_txt{
+.erregistro_txt {
   max-width: 50%;
   margin-left: 400px;
   margin-top: 50px;
 }
-.erregistro h4{
+.erregistro h4 {
   font-size: larger;
 }
-.erregistro hr{
-  color:rgb(255, 206, 0);
+.erregistro hr {
+  color: rgb(255, 206, 0);
 }
-.hr{
+.hr {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
   margin-top: 3px;
 }
-.gizarteori{
-  color: rgb(255, 206, 0)
+.gizarteori {
+  color: rgb(255, 206, 0);
 }
-.email{
+.email {
   border: 30px color rgb(255, 206, 0);
-  background-color: rgb(19, 38, 84) ;
+  background-color: rgb(19, 38, 84);
   width: 500px;
   height: 40px;
   text-align: center;
 }
-.bidali{
+.bidali {
   color: rgb(6, 31, 77);
   background-color: rgb(255, 206, 0);
   border-radius: 10px;
@@ -355,7 +347,6 @@ h4:not(.erregistro_izenburu) {
   height: 30px;
   margin-top: 45px;
 }
-
 
 /*tamaina eta formatua*/
 .argazkialogoa {
@@ -474,7 +465,6 @@ h4:not(.erregistro_izenburu) {
   justify-content: center;
   max-width: 400px;
   min-width: 400px;
-
 }
 
 /*tamaina adierazi*/
@@ -602,37 +592,36 @@ h4:not(.erregistro_izenburu) {
   color: #08285c;
   outline: none;
 }
-.horia{
-  color:rgb(255, 206, 0);
+.horia {
+  color: rgb(255, 206, 0);
 }
-.edukia h3{
+.edukia h3 {
   font-size: 30px;
   text-transform: uppercase;
-
 }
-.edukia p{
+.edukia p {
   margin-top: 10px;
 }
 
-.irisgarritasuna{
+.irisgarritasuna {
   margin-top: 30px;
 }
-.edukia{
+.edukia {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:30px;
+  gap: 30px;
 }
-.edukia p{
+.edukia p {
   font-size: larger;
   margin-left: 70px;
   margin-right: 70px;
 }
-.edukia img{
+.edukia img {
   width: 500px;
   margin-top: 20px;
 }
-.edukia .komunitatea{
+.edukia .komunitatea {
   margin-bottom: 30px;
 }
 /*idazteko eremuan dagoen testuaren kolorea*/
@@ -654,7 +643,7 @@ h4:not(.erregistro_izenburu) {
   cursor: pointer;
   margin: 0;
 }
-ezerakutsi{
+ezerakutsi {
   display: none;
 }
 .newsletter-button:hover {
@@ -712,7 +701,7 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
-.ikonoa_hasiera{
+.ikonoa_hasiera {
   display: none;
 }
 
@@ -724,10 +713,10 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
 .cookie-toggle {
   display: none;
 }
-nav ul:not(.desplegable-menua){
-display: flex;
-text-align: center;
-gap:30px;
+nav ul:not(.desplegable-menua) {
+  display: flex;
+  text-align: center;
+  gap: 30px;
 }
 
 /* Cookie-en oharraren diseinua (pantailaren behekaldean finko) */
@@ -786,7 +775,7 @@ gap:30px;
 }
 
 /* Checkbox-a sakatuta dagoenean (checked), cookie bannerra ezkutatu */
-.cookie-toggle:checked+.cookie-banner {
+.cookie-toggle:checked + .cookie-banner {
   display: none;
 }
 
@@ -823,7 +812,7 @@ gap:30px;
 }
 /* Pantaila txikietan (mugikorra / tableta) */
 @media (max-width: 768px) {
-  *{
+  * {
     margin: 0%;
     padding: 0%;
   }
@@ -845,9 +834,9 @@ gap:30px;
   /* Hamburgesa ikusi */
   .hamburger {
     display: flex;
-    
+
     order: -1;
-    margin-right: auto ;
+    margin-right: auto;
   }
 
   /* Zerrenda ezkutatuta hasieran */
@@ -881,146 +870,144 @@ gap:30px;
   }
 
   /* Egunen azpimenua beti ikusgai (mugikorrean hover ez dabil ondo) */
-  
+
   /* Hiru marrak X bihurtu menua irekita dagoenean */
-.menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
-  opacity: 0;
-}
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-h1{
-  display: none;
-}
-.hedgoi button{
-  margin-top: 30px;
-}
-.logotipogoiburua{
-  align-items: center;
-}
-#header{
-  margin-top: 0%;
-}
-.menua-ezkerrean{
-  margin-top: 0%;
-}
-header{
-  height: 75px;
-}
-.menuaorder{
-  display: flex;
-  align-items: center;
- 
-}
-.ezerakutsi{
-  order: 2;
-  float: inline-start;
-  display: flex;
-  object-fit: cover;
-  height: 100px;
-  min-width: 300px;
-  margin-right: -30px;
-  margin-left: -30px;
-}
-.erakutsi{
-  display: none;
-}
-.saiohasi{
-  display: none;
-}
-.ikonoa_hasiera{
-  display:flex;
-  order:3;
-  margin-left: auto;
-  margin-right: 20px;
-}
-.ikonoa{
-  height: 20px;
- margin-right: 300px;
-}
-img{
-  max-width: 400px;
-}
-.edukia p{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.pelikuleispan span{
-  font-size: 30px;
-  font-weight: bold;
-}
-.pelikuleispan span:not(.gizarteori){
-  margin-left: 20px;
-}
-.footer-logo{
-  display: none;
-}
-.desplegable-menua{
-  display: none;
-}
-.desplegable-menua {
-  display: none;
-  position: static;
-  width: 100%;
-  box-shadow: none;
-  text-align: center;
-}
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  h1 {
+    display: none;
+  }
+  .hedgoi button {
+    margin-top: 30px;
+  }
+  .logotipogoiburua {
+    align-items: center;
+  }
+  #header {
+    margin-top: 0%;
+  }
+  .menua-ezkerrean {
+    margin-top: 0%;
+  }
+  header {
+    height: 75px;
+  }
+  .menuaorder {
+    display: flex;
+    align-items: center;
+  }
+  .ezerakutsi {
+    order: 2;
+    float: inline-start;
+    display: flex;
+    object-fit: cover;
+    height: 100px;
+    min-width: 300px;
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .erakutsi {
+    display: none;
+  }
+  .saiohasi {
+    display: none;
+  }
+  .ikonoa_hasiera {
+    display: flex;
+    order: 3;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .ikonoa {
+    height: 20px;
+    margin-right: 300px;
+  }
+  img {
+    max-width: 400px;
+  }
+  .edukia p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .pelikuleispan span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .pelikuleispan span:not(.gizarteori) {
+    margin-left: 20px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .desplegable-menua {
+    display: none;
+  }
+  .desplegable-menua {
+    display: none;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    text-align: center;
+  }
 
-.checkerakutsi:checked ~ .desplegable-menua {
-  display: block;
-}
+  .checkerakutsi:checked ~ .desplegable-menua {
+    display: block;
+  }
 
-.menua-ezkerrean a.checkezerakutsi {
-  display: none;
-}
+  .menua-ezkerrean a.checkezerakutsi {
+    display: none;
+  }
 
-.desplegable-label {
-  display: block;
-  padding: 1rem;
-  border-bottom: 1px solid rgb(6, 31, 77);
-  color: rgb(255, 206, 0);
-  cursor: pointer;
+  .desplegable-label {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(6, 31, 77);
+    color: rgb(255, 206, 0);
+    cursor: pointer;
+  }
+  .checkezerakutsi {
+    display: none;
+  }
+  h3 {
+    margin-top: 30px;
+  }
+  .footer-contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-derecha {
+    order: -1;
+  }
+  .saresoz ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .saresoz {
+    margin-right: -80px;
+  }
+  .saresoz img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-bottom {
+    font-size: 10px;
+  }
+  .newsletter h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.checkezerakutsi{
-  display: none;
-}
-h3{
-  margin-top: 30px;
-}
-.footer-contenido{
-  display: flex;
-  flex-direction: column;
-}
-.footer-derecha{
-  order:-1;
-}
-.saresoz ul{
-  display: flex;
-  align-items: center;
-  gap:20px;
-}
-.saresoz{
-  margin-right: -80px;
-}
-.saresoz img{
-  width: 40px;
-  height: 40px;
-}
-.footer-bottom{
-  font-size: 10px;
-}
-.newsletter h2{
-  font-size: 20px;
-  text-align: center;
-}
-.newsletter-form{
-  display: flex;
-  flex-direction: column;
-}
-}
-
