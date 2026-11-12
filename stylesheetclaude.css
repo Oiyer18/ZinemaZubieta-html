@@ -992,5 +992,35 @@ img{
 h3{
   margin-top: 30px;
 }
+.footer-contenido{
+  display: flex;
+  flex-direction: column;
+}
+.footer-derecha{
+  order:-1;
+}
+.saresoz ul{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.saresoz{
+  margin-right: -80px;
+}
+.saresoz img{
+  width: 40px;
+  height: 40px;
+}
+.footer-bottom{
+  font-size: 10px;
+}
+.newsletter h2{
+  font-size: 20px;
+  text-align: center;
+}
+.newsletter-form{
+  display: flex;
+  flex-direction: column;
+}
 }
 
