@@ -778,3 +778,78 @@ gap:30px;
 .cookie-toggle:checked+.cookie-banner {
   display: none;
 }
+ .menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+  @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      /* Transform navigation list into a dropdown panel */
+      .menua-ezkerrean {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+       
+        /* Collapse the menu vertically by default */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+      }
+
+      .menua-ezkerrean li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .menua-ezkerrean a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #444;
+      }
+    }
+     /* ==========================================
+         3. THE STATE TOGGLE MAGIC (No JS Needed)
+         ========================================== */
+     
+      /* Expand the menu list when the checkbox is active */
+      .menu-toggle:checked ~ .nav-links {
+        max-height: 300px; /* Adjust depending on number of items */
+      }
+
+      /* Rotate first bar to form the first half of the 'X' */
+      .menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      /* Fade out middle bar */
+      .menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      /* Rotate third bar to form the second half of the 'X' */
+      .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    
