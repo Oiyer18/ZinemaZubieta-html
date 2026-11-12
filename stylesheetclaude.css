@@ -158,8 +158,9 @@ nav a {
 }
 .pelikuleispan {
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left: 20px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .langaldetegi {
@@ -815,7 +816,9 @@ nav ul:not(.desplegable-menua) {
   * {
     margin: 0%;
     padding: 0%;
+      
   }
+  
   header {
     position: relative; /* menu desplegatua goiburuaren azpian kokatzeko */
   }
@@ -980,6 +983,37 @@ nav ul:not(.desplegable-menua) {
   h3 {
     margin-top: 30px;
   }
+  .pelikuleispan span{
+    display: flex;
+    gap:15px;
+    text-align: center;
+
+  }
+  label{
+    text-align: center;
+  }
+  .deskirk{
+    display: none;
+    
+  }
+  .deskrib{
+    margin-left: -20px;
+  }
+  .langaldetegi .bidali{
+    margin-left: 40px;
+  }
+  input[type="file"]{
+    margin-top: 10px;
+    margin-left:-50px;
+  }
+  .erregistro_txt{
+    margin-left: 50px;
+    max-width: 75%;
+  }
+  .email{
+    width: 300px;
+  }
+  /* FOOTERRA */
   .footer-contenido {
     display: flex;
     flex-direction: column;
@@ -1009,5 +1043,15 @@ nav ul:not(.desplegable-menua) {
   .newsletter-form {
     display: flex;
     flex-direction: column;
+  }
+  .newsletter{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* COOKIAK */
+  .cookie-banner{
+    width: 45%;
+    margin-left: -150px;
+    
   }
 }
