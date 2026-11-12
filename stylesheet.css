@@ -262,7 +262,7 @@ input[type="file"]{
 }
 
 /* Desplegable barruko esteken hover-a */
-.desplegable-menua a:hover {
+.desplegable-menua a:hover:not(.hemen-gaude) {
   background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
   transition: background-color 0.2s;
@@ -274,16 +274,11 @@ input[type="file"]{
 }
 
 /*header barruan, lista barruan dauden esteka guztien kolorea, formatua eta padding-a zehazten*/
-#headerra li>a {
-  color: rgb(255, 206, 0);
-  padding: 16px 1px 1px 16px;
-  text-decoration: none;
-  display: flex;
-}
+
 
 
 /*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
-#headerra li>a:hover {
+#headerra li>a:hover:not(.q):not(.hemen-gaude) {
   background-color: rgb(255,
       206,
       0);
@@ -717,6 +712,11 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
 /* Checkbox-a ezkutatu, bistaratzeko egoera kontrolatzeko bakarrik*/
 .cookie-toggle {
   display: none;
+}
+nav ul:not(.desplegable-menua){
+display: flex;
+text-align: center;
+gap:30px;
 }
 
 /* Cookie-en oharraren diseinua (pantailaren behekaldean finko) */
