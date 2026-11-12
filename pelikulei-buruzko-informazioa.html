@@ -10,21 +10,39 @@
 
 <body>
     <header id="headerra">
-<div class="hedgoi"><img
-        class="logotipogoiburua"
-        src="argazkiak/logotipogoiburua.png"
-        alt="logotipoa"
-      /><h1>zubieta<span class="horia"> zinema</span></h1>
-      <button>
-        <a href="erregistroa.html" class="saiohasi">SAIOA HASI</a>
-      </button>
+      <div class="hedgoi">
+        <img
+          class="erakutsi"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <h1>zubieta<span class="horia"> zinema</span></h1>
+        <button>
+          <a href="erregistroa.html" class="saiohasi">SAIOA HASI</a>
+        </button>
       </div>
-        <nav class="menua-ezkerrean">
+      <nav class="menua-ezkerrean">
+        <img
+          class="ezerakutsi menuaorder"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <a href="erregistroa.html" class="ikonoa_hasiera"><img class="ikonoa menuaorder" src="argazkiak/iconoa.png" href="erregistroa.html" alt="pertsona baten ikonoa"></a>
+        <!-- Hidden state manager -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Interactive click trigger -->
+        <label for="menu-toggle" class="hamburger menuaorder">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
         <ul>
           <li><a href="Zinemazubieta1.html" class="q">hasiera</a></li>
           <li><a href="nor-gara.html" class="q">nor gara?</a></li>
-          <div class="desplegablea">
-            <a class="q">asteko egunak</a>
+          <li><div class="desplegablea">
+           <a class="q asteguna checkezerakutsi">ASTEKO EGUNAK</a>
+           <input type="checkbox" id="checkerakutsi" class="checkerakutsi">
+           <label for="checkerakutsi" class="desplegable-label">ASTEKO EGUNAK</label>
             <ul class="desplegable-menua">
               <li><a href="astelehena.html">astelehena</a></li>
               <li><a href="asteartea.html">asteartea</a></li>
@@ -34,7 +52,7 @@
               <li><a href="larunbata.html">larunbata</a></li>
               <li><a href="igandea.html">igandea</a></li>
             </ul>
-          </div>
+          </div></li>
           <li>
             <a href="pelikulei-buruzko-informazioa.html" class="hemen-gaude"
               >pelikulei buruzko informazioa</a
@@ -45,7 +63,8 @@
             <a href="zinemaetagizartea.html" class="q">zinema eta gizartea</a>
           </li>
         </ul>
-        </nav>
+        
+      </nav>
     </header>
     <div class="pelikuleispan"><span>pelikulei buruzko</span><br><span class="gara-oria">informazioa</span></div>
     <details open>
