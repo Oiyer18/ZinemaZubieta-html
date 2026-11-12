@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="eu">
   <head>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheetclaude.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTEAZKENEKO PELIKULAK</title>
@@ -10,7 +10,7 @@
     <header id="headerra">
       <div class="hedgoi">
         <img
-          class="logotipogoiburua"
+          class="erakutsi"
           src="argazkiak/logotipogoiburua.png"
           alt="logotipoa"
         />
@@ -20,11 +20,27 @@
         </button>
       </div>
       <nav class="menua-ezkerrean">
-       <ul>
+        <img
+          class="ezerakutsi menuaorder"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <a href="erregistroa.html" class="ikonoa_hasiera"><img class="ikonoa menuaorder" src="argazkiak/iconoa.png" href="erregistroa.html" alt="pertsona baten ikonoa"></a>
+        <!-- Hidden state manager -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Interactive click trigger -->
+        <label for="menu-toggle" class="hamburger menuaorder">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
           <li><a href="Zinemazubieta1.html" class="q">hasiera</a></li>
           <li><a href="nor-gara.html" class="q">nor gara?</a></li>
           <li><div class="desplegablea">
-            <a class="hemen-gaude">ASTEAZKENA</a>
+           <a class="q asteguna checkezerakutsi">ASTEKO EGUNAK</a>
+           <input type="checkbox" id="checkerakutsi" class="checkerakutsi">
+           <label for="checkerakutsi" class="desplegable-label">ASTEKO EGUNAK</label>
             <ul class="desplegable-menua">
               <li><a href="astelehena.html">astelehena</a></li>
               <li><a href="asteartea.html">asteartea</a></li>
@@ -42,9 +58,10 @@
           </li>
           <li><a href="eginlangurekin.html" class="q">egin lan gurekin</a></li>
           <li>
-            <a href="zinemaetagizartea.html" class="q">zinema eta gizartea</a>
+            <a href="zinemaetagizartea.html" class="hemen-gaude">zinema eta gizartea</a>
           </li>
         </ul>
+        
       </nav>
     </header>
 
@@ -107,7 +124,7 @@
     <footer class="footer">
       <div class="footer-contenido">
         <!-- EZKERREKO ZATIA -->
-
+        <div class="behekozatia">
         <div class="footer-info">
           <img
             class="footer-logo"
@@ -147,7 +164,7 @@
             </li>
           </ul>
         </div>
-
+        </div>
         <!-- ESKUINEKO ZATIA -->
 
         <div class="footer-derecha">
@@ -170,10 +187,10 @@
               </button>
             </form>
           </div>
-
-          <!-- SARE SOZIALAK -->
-
-          <ul class="footer-redes">
+        </div>
+        <!-- SARE SOZIALAK -->
+        <div class="saresoz">
+            <ul class="footer-redes">
             <li class="footer-redes-item">
               <a class="footer-redes-link" href="https://x.com/">
                 <img
@@ -234,7 +251,7 @@
               </a>
             </li>
           </ul>
-        </div>
+          </div>
       </div>
 
       <div class="footer-bottom">
@@ -249,6 +266,5 @@
           <a class="footer-enlace" href=""> Pribatutasun-politika </a>
         </div>
       </div>
-    </footer>
-  </body>
+    </footer>  </body>
 </html>
