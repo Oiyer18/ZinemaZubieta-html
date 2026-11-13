@@ -975,6 +975,9 @@ nav ul:not(.desplegable-menua) {
     margin-left: 50px;
     margin-right: 50px;
   }
+  .edukia img{
+    width: 350px;
+  }
   .pelikuleispant span {
     font-size: 30px;
     font-weight: bold;
