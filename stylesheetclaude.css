@@ -117,6 +117,7 @@ header h1 {
 }
 .gurekin_oria {
   color: rgb(255, 206, 0);
+  margin-left: 10px;
 }
 .kolorea {
   color: rgb(255, 206, 0);
@@ -166,7 +167,7 @@ nav a {
   margin-left: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .langaldetegi {
   margin-left: 100px;
@@ -226,20 +227,6 @@ input[type="file"] {
 #headerra nav a:not(.hemen-gaude) {
   text-decoration: none;
   color: rgb(255, 206, 0);
-}
-.pelikulak{
-  display: flex;
-  flex-direction: column;
-}
-.pelikulak .pelikula-info-egunak{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.pelikula-info-egunak img{
-  margin-top: 40px;
-  margin-bottom: -120px;
 }
 
 /* ==========================================================================
@@ -441,7 +428,24 @@ h4:not(.erregistro_izenburu) {
   padding-top: 30px;
   padding-bottom: 70px;
 }
-
+.pelikuleiburuz{
+  display: flex;
+  font-size: 30px;
+  gap:10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.titulotxikia-nor{
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left:20px ;
+  margin-top: 30px;
+}
+.titulotxikia{
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
 /*Tituloaren tamaina adierazi eta kokapena*/
 .h4 {
   text-align: center;
@@ -678,7 +682,7 @@ ezerakutsi {
 
 .footer-redes {
   display: flex;
-  justify-content: flex-end;
+  
   /* Eskuinean lerrokatzeko */
   gap: 25px;
   margin-right: 100px;
@@ -717,21 +721,7 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
   color: white;
   text-decoration: none;
 }
- .titulotxikia{
-    font-size: 50px;
-    display: flex;
-    text-align: center;
-    text-transform: uppercase;
-    gap: 20px;
-   
-  }
-  .titulotxikia-nor{
-    font-size: 50px;
-    display: flex;
-    text-align: center;
-    text-transform: uppercase;
-    gap: 20px;
-  }
+
 /*hover-aren testu aldaketa*/
 .footer-enlace:hover {
   text-decoration: none;
@@ -943,6 +933,7 @@ nav ul:not(.desplegable-menua) {
     display: flex;
     align-items: center;
   }
+
   .ezerakutsi {
     order: 2;
     float: inline-start;
@@ -1092,6 +1083,37 @@ nav ul:not(.desplegable-menua) {
   .norinfo .argazkialogoa{
     display: none;
   }
+  .pelikuleiburuz{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -10px;
+  justify-content:center;
+  gap:10px;
+  margin-left: 60px;
+}
+
+  .argazkia-item {
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  min-width:100px;
+  margin-top: -270px;
+  margin-bottom: -300px;
+}
+.zinema-trans{
+  width: 600px;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -100px;
+}
+.zinema-txt{
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: -100px;
+  
+}
   .pelikuleispan .titulotxikia-pelinfo{
     display: flex;
     text-align: center;
@@ -1130,7 +1152,7 @@ nav ul:not(.desplegable-menua) {
     gap:40px;
     
    }
-   .pelikuleburuz{
+      .pelikuleburuz{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1138,8 +1160,6 @@ nav ul:not(.desplegable-menua) {
    .buruztit{
     text-transform: uppercase;
     font-size: 27px;
-    margin-left: 60px;
-    
    }
    .buruztit:nth-child(1){
     margin-top: 30px;
@@ -1155,13 +1175,44 @@ nav ul:not(.desplegable-menua) {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 0px;
    
   }
-  .galeria-pelikulak img{
-     max-height: 100px;
-    max-width: 25px;
-  }
- 
+    .argazkiak2 {
+  width: 120px;
+  max-width: 300px;
+  height: 500px;
+  object-fit:contain;
+  border-radius: 12px;
+  display: flex;
+  
+}
+
+.argazkiak1,
+.argazkiak3 {
+  width: 110px;
+  max-width: 800px;
+  height: 740px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: flex;
+  
+}
+  .pelikulak{
+  display: flex;
+  flex-direction: column;
+}
+.pelikulak .pelikula-info-egunak{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.pelikula-info-egunak img{
+  margin-top: 40px;
+  margin-bottom: -120px;
+}
+
   input[type="file"]{
     margin-top: 10px;
     margin-left:-50px;
@@ -1189,6 +1240,15 @@ nav ul:not(.desplegable-menua) {
  .saresoz{
   margin-left: -80px;
  }
+  .titulotxikia{
+  
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 20px;
+   
+  }
+
   .footer-redes-item:nth-child(1){
     margin-left: 80px;
   }
@@ -1212,9 +1272,4 @@ nav ul:not(.desplegable-menua) {
     margin-right: 10px;
   }
   /* COOKIAK */
-  .cookie-banner{
-    width: 45%;
-    margin-left: -150px;
-    
-  }
 }
