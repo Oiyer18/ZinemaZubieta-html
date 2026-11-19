@@ -1,75 +1,132 @@
 <!doctype html>
 <html lang="eu">
   <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheetclaude.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTEAZKENEKO PELIKULAK</title>
   </head>
-<body>
-<header id="headerra">
-
- <span>zubieta</span><span id="zubieta-oria">zinema</span>
- <button><a href="erregistroa.html" class="saiohasi">SAIOA HASI</a></button>
- <img class="logotipogoiburua" src="argazkiak/logotipogoiburua.png" alt="logotipoa">
-<nav class="menua-ezkerrean">
-    <a href="Zinemazubieta1.html" class="hasiera-border">hasiera</a>
-    <a href="nor-gara.html" class="norgara-border">nor gara?</a>
-    <div class="desplegablea">
-        <a class="hemen-gaude">ASTEAZKENA</a>
-        <ul class="desplegable-menua"> 
-            <li><a href="astelehena.html">astelehena</a></li>
-            <li><a href="asteartea.html">asteartea</a></li>
-            <li><a href="asteazkena.html">asteazkena</a></li>
-            <li><a href="osteguna.html">osteguna</a></li>
-            <li><a href="ostirala.html">ostirala</a></li>
-            <li><a href="larunbata.html">larunbata</a></li>
-            <li><a href="igandea.html">igandea</a></li>
+  <body>
+    <header id="headerra">
+      <div class="hedgoi">
+        <img
+          class="erakutsi"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <h1>zubieta<span class="horia"> zinema</span></h1>
+        <button>
+          <a href="erregistroa.html" class="saiohasi menuaorder">SAIOA HASI</a>
+        </button>
+      </div>
+      <nav class="menua-ezkerrean">
+        <img
+          class="ezerakutsi menuaorder"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <a href="erregistroa.html" class="ikonoa_hasiera"><img class="ikonoa menuaorder" src="argazkiak/iconoa.png" href="erregistroa.html" alt="pertsona baten ikonoa"></a>
+        <!-- Hidden state manager -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Interactive click trigger -->
+        <label for="menu-toggle" class="hamburger menuaorder">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li><a href="Zinemazubieta1.html" class="q">hasiera</a></li>
+          <li><a href="nor-gara.html" class="q">nor gara?</a></li>
+          <li><div class="desplegablea">
+           <a class="hemen-gaude asteguna checkezerakutsi">ASTEAZKENA</a>
+           <input type="checkbox" id="checkerakutsi" class="checkerakutsi">
+           <label for="checkerakutsi" class="desplegable-label hemen-gaude">ASTEAZKENA</label>
+            <ul class="desplegable-menua">
+              <li><a href="astelehena.html">astelehena</a></li>
+              <li><a href="asteartea.html">asteartea</a></li>
+              <li><a href="asteazkena.html">asteazkena</a></li>
+              <li><a href="osteguna.html">osteguna</a></li>
+              <li><a href="ostirala.html">ostirala</a></li>
+              <li><a href="larunbata.html">larunbata</a></li>
+              <li><a href="igandea.html">igandea</a></li>
+            </ul>
+          </div></li>
+          <li>
+            <a href="pelikulei-buruzko-informazioa.html" class="q"
+              >pelikulei buruzko informazioa</a
+            >
+          </li>
+          <li><a href="eginlangurekin.html" class="q">egin lan gurekin</a></li>
+          <li>
+            <a href="zinemaetagizartea.html" class="q">zinema eta gizartea</a>
+          </li>
         </ul>
-    </div>
-    <a href="pelikulei-buruzko-informazioa.html">pelikulei buruzko informazioa</a>
-    <a href="eginlangurekin.html" class="lan-border">egin lan gurekin</a>
-    <a href="zinemaetagizartea.html" class="gizartea-border">zinema eta gizartea</a>
-    
-</nav>
+        
+      </nav>
     </header>
 
     <main>
-<span>
-  ASTEAZKENEKO
-</span>
-<span class="kolorea">
-PELIKULAK
-</span>
-<br>
-<div class="pelikula-info-egunak">
-<div><h3>BLANCANIEVES</h3>
-<img src="argazkiak/edurnezuri.png"></div>
-<p>Edurnezuri edertasun paregabeko neska gazte bat da. Bere amaorde erregina gaiztoa oso jeloskor dago, bere ispilu magikoak munduko emakumerik ederrena Edurnezuri dela esaten dion bakoitzean. Hori dela eta, erreginak ehiztari bati neska basora eraman eta hiltzeko agintzen dio</p>
-</div>
-<div class="pelikula-info-egunak">
-<div><h3>THUNDERBOLT </h3>
-<img src="argazkiak/thunderbolt.png"></div>
-<p>AEBetako Gobernuak Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster eta John Walkerrek osatutako talde berezia bildu du misioak egiteko. Valentina Allegra de Fontainek prestatutako tranpa batean erorita, misio arriskutsu bati aurre egin beharko diote bizirik irauteko</p>
-</div>
-<div class="pelikula-info-egunak">
-<div><h3>PADRE NO HAY MAS QUE UNO 5</h3>
-<img src="argazkiak/padrenohaymasqueuno5.png">
-</div> 
-<p>Guraso batzuek "habia hutsaren" larritasuna sentitzen dute seme-alabak etxea uzten hasten direnean; Javierrek, aldiz, "habia betearen" trauma du, zeren eta inor ez baitoa etxetik.</p>
-</div>
-<div class="pelikula-info-egunak">
-  <div><h3>WOLFGANG: (EXTRAORDINARIO)</h3>
-<img src="argazkiak/wolfgang.png"></div>
+      <div class="pelikuleispan">
+        <span> ASTEAZKENEKO </span> <span class="kolorea"> PELIKULAK </span>
+      </div>
+      <br />
+      <div class="pelikulak">
+      <div class="pelikula-info-egunak">
+        <div>
+          <h3>BLANCANIEVES</h3>
+          <img src="argazkiak/edurnezuri.png" />
+        </div>
+        <p>
+          Edurnezuri edertasun paregabeko neska gazte bat da. Bere amaorde
+          erregina gaiztoa oso jeloskor dago, bere ispilu magikoak munduko
+          emakumerik ederrena Edurnezuri dela esaten dion bakoitzean. Hori dela
+          eta, erreginak ehiztari bati neska basora eraman eta hiltzeko agintzen
+          dio
+        </p>
+      </div>
+      <div class="pelikula-info-egunak">
+        <div>
+          <h3>THUNDERBOLT</h3>
+          <img src="argazkiak/thunderbolt.png" />
+        </div>
+        <p>
+          AEBetako Gobernuak Yelena Belova, Bucky Barnes, Red Guardian, Ghost,
+          Taskmaster eta John Walkerrek osatutako talde berezia bildu du misioak
+          egiteko. Valentina Allegra de Fontainek prestatutako tranpa batean
+          erorita, misio arriskutsu bati aurre egin beharko diote bizirik
+          irauteko
+        </p>
+      </div>
+      <div class="pelikula-info-egunak">
+        <div>
+          <h3>PADRE NO HAY MAS QUE UNO 5</h3>
+          <img src="argazkiak/padrenohaymasqueuno5.png" />
+        </div>
+        <p>
+          Guraso batzuek "habia hutsaren" larritasuna sentitzen dute seme-alabak
+          etxea uzten hasten direnean; Javierrek, aldiz, "habia betearen" trauma
+          du, zeren eta inor ez baitoa etxetik.
+        </p>
+      </div>
+      <div class="pelikula-info-egunak">
+        <div>
+          <h3>WOLFGANG: (EXTRAORDINARIO)</h3>
+          <img src="argazkiak/wolfgang.png" />
+        </div>
 
-<p>Wolfgang 10-11 urteko mutila da, 152ko adimen-kofizientea eta autismoaren espektroko nahasmendua dituena. Bere pasio handiena pianoa jotzea da, eta munduko pianistarik onena izatearekin egiten du amets.</p>
-</div>
+        <p>
+          Wolfgang 10-11 urteko mutila da, 152ko adimen-kofizientea eta
+          autismoaren espektroko nahasmendua dituena. Bere pasio handiena pianoa
+          jotzea da, eta munduko pianistarik onena izatearekin egiten du amets.
+        </p>
+      </div>
+      </div>
     </main>
-º
+    º
     <footer class="footer">
       <div class="footer-contenido">
         <!-- EZKERREKO ZATIA -->
-
+        <div class="behekozatia">
         <div class="footer-info">
           <img
             class="footer-logo"
@@ -109,7 +166,7 @@ PELIKULAK
             </li>
           </ul>
         </div>
-
+        </div>
         <!-- ESKUINEKO ZATIA -->
 
         <div class="footer-derecha">
@@ -132,10 +189,10 @@ PELIKULAK
               </button>
             </form>
           </div>
-
-          <!-- SARE SOZIALAK -->
-
-          <ul class="footer-redes">
+        </div>
+        <!-- SARE SOZIALAK -->
+        <div class="saresoz">
+            <ul class="footer-redes">
             <li class="footer-redes-item">
               <a class="footer-redes-link" href="https://x.com/">
                 <img
@@ -196,13 +253,13 @@ PELIKULAK
               </a>
             </li>
           </ul>
-        </div>
+          </div>
       </div>
 
       <div class="footer-bottom">
         <p class="footer-copyright">
-         Eskubide guztiak erreserbatuta. Marka komertzial guztiak dagozkien
-        jabeen jabetzakoak dira.
+          Eskubide guztiak erreserbatuta. Marka komertzial guztiak dagozkien
+          jabeen jabetzakoak dira.
         </p>
 
         <div class="footer-enlaces">
@@ -211,6 +268,5 @@ PELIKULAK
           <a class="footer-enlace" href=""> Pribatutasun-politika </a>
         </div>
       </div>
-    </footer>
-  </body>
+    </footer>  </body>
 </html>

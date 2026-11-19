@@ -1,60 +1,152 @@
 <!doctype html>
 <html lang="eu">
   <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheetclaude.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOR GARA</title>
   </head>
-<body>
-<header id="headerra">
-
- <span>zubieta</span><span id="zubieta-oria">zinema</span>
-<button><a href="erregistroa.html" class="saiohasi">SAIOA HASI</a></button>
- <img class="logotipogoiburua" src="argazkiak/logotipogoiburua.png" alt="logotipoa">
-<nav class="menua-ezkerrean">
-    <a href="Zinemazubieta1.html" class="hasiera-border">hasiera</a>
-    <a href="nor-gara.html" class="hemen-gaude">nor gara?</a>
-    <div class="desplegablea">
-        <a class="astekoegunak-border">asteko egunak</a>
-        <ul class="desplegable-menua"> 
-            <li><a href="astelehena.html">astelehena</a></li>
-            <li><a href="asteartea.html">asteartea</a></li>
-            <li><a href="asteazkena.html">asteazkena</a></li>
-            <li><a href="osteguna.html">osteguna</a></li>
-            <li><a href="ostirala.html">ostirala</a></li>
-            <li><a href="larunbata.html">larunbata</a></li>
-            <li><a href="igandea.html">igandea</a></li>
+  <body>
+    <header id="headerra">
+      <div class="hedgoi">
+        <img
+          class="erakutsi"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <h1>zubieta<span class="horia"> zinema</span></h1>
+        <button>
+          <a href="erregistroa.html" class="saiohasi menuaorder">SAIOA HASI</a>
+        </button>
+      </div>
+      <nav class="menua-ezkerrean">
+        <img
+          class="ezerakutsi menuaorder"
+          src="argazkiak/logotipogoiburua.png"
+          alt="logotipoa"
+        />
+        <a href="erregistroa.html" class="ikonoa_hasiera"><img class="ikonoa menuaorder" src="argazkiak/iconoa.png" href="erregistroa.html" alt="pertsona baten ikonoa"></a>
+        <!-- Hidden state manager -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Interactive click trigger -->
+        <label for="menu-toggle" class="hamburger menuaorder">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li><a href="Zinemazubieta1.html" class="q">hasiera</a></li>
+          <li><a href="nor-gara.html" class="hemen-gaude">nor gara?</a></li>
+          <li><div class="desplegablea">
+           <a class="q asteguna checkezerakutsi">ASTEKO EGUNAK</a>
+           <input type="checkbox" id="checkerakutsi" class="checkerakutsi">
+           <label for="checkerakutsi" class="desplegable-label">ASTEKO EGUNAK</label>
+            <ul class="desplegable-menua">
+              <li><a href="astelehena.html">astelehena</a></li>
+              <li><a href="asteartea.html">asteartea</a></li>
+              <li><a href="asteazkena.html">asteazkena</a></li>
+              <li><a href="osteguna.html">osteguna</a></li>
+              <li><a href="ostirala.html">ostirala</a></li>
+              <li><a href="larunbata.html">larunbata</a></li>
+              <li><a href="igandea.html">igandea</a></li>
+            </ul>
+          </div></li>
+          <li>
+            <a href="pelikulei-buruzko-informazioa.html" class="q"
+              >pelikulei buruzko informazioa</a
+            >
+          </li>
+          <li><a href="eginlangurekin.html" class="q">egin lan gurekin</a></li>
+          <li>
+            <a href="zinemaetagizartea.html" class="q">zinema eta gizartea</a>
+          </li>
         </ul>
-    </div>
-    <a href="pelikulei-buruzko-informazioa.html">pelikulei buruzko informazioa</a>
-    <a href="eginlangurekin.html" class="lan-border">egin lan gurekin</a>
-    <a href="zinemaetagizartea.html" class="gizartea-border">zinema eta gizartea</a>
-    
-</nav>
+        
+      </nav>
     </header>
-    <span>nor</span>
-    <span class="gara-oria">gara?</span>
-    <h4>enpresari buruz</h4>
-    <p>ZubietaZinema zinema-aretoen kudeaketan eta zinemaren hedapenean espezializatutako enpresa da. Gure jardueraren helburua ikusleei <strong style="color:  rgb(255, 206, 0);">zinema-esperientzia osoa eskaintzea da</strong> , kalitatea, erosotasuna eta zerbitzu ona oinarri hartuta.
-Gure ibilbidea zinema publikoarengana <strong style="color: rgb(255, 206, 0);">hurbiltzeko</strong>  helburuarekin hasi zen, eta, urteetan zehar, ZubietaZinema hazten eta egokitzen joan da ikusleen <strong style="color:rgb(255, 206, 0);">ohitura</strong>  eta behar berrietara. Gaur egun, gure aretoetan azken estreinaldiak eta <strong style="color: rgb(255, 206, 0);">askotariko zinema-eskaintza</strong>  eskaintzen ditugu, publiko desberdinen interesetara egokituz.</p>
-    <h4>gure jarduerak</h4>
-    <p>ZubietaZineman, zinema-aretoen kudeaketa ez da gure jardueraren ardatz bakarra. Ikuslearen esperientzia osoa <strong style="color: rgb(255, 206, 0);">zaintzen</strong>  dugu: sarrerak erosteko prozesua, aretoen erosotasuna, irudiaren eta soinuaren <strong style="color: rgb(255, 206, 0);">kalitatea</strong>  eta gure langileek eskaintzen duten <strong style="color: rgb(255, 206, 0);">arreta</strong>.
-Horretarako, gure instalazioak eta ekipamenduak etengabe eguneratzen ditugu, <strong style="color: rgb(255, 206, 0);">teknologia berriak</strong>  txertatuz eta <strong style="color: rgb(255, 206, 0);">zerbitzuak</strong>  hobetuz.</p>
-    <img class="aretoirudia" src="argazkiak/zubietazinea.png" alt="Zinearen irudia" >
-    <h4>gure konpromisoak</h4>
-    <p>gure konpromisoa argia da: <strong style="color: rgb(255, 206, 0);">kalitatezko</strong> zinema-esperientzia eskaintzea eta gure <strong style="color: rgb(255, 206, 0);">ikusleen konfiantza</strong>  epe luzera mantentzea.
-Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
-    <ul>
-        <li><strong style="color: rgb(255, 206, 0);">Kalitatea:</strong>  proiekzio, soinu eta instalazioen kalitatea zaintzea.</li>
-        <li><strong style="color: rgb(255, 206, 0);">Berrikuntza:</strong>  teknologia eta zerbitzu berriak txertatzea, ikusleen beharretara egokitzeko.</li>
-        <li><strong style="color: rgb(255, 206, 0);"> Gertutasuna:</strong> bezeroari arreta profesionala eta hurbila eskaintzea.</li>
-    </ul>
-    <img class="argazkialogoa" src="argazkiak/zubietazinemalogoa.png" alt="ZubietaZinema logoa">
-<footer class="footer">
+    <div class="pelikuleispan">
+      <h2 class="titulotxikia-nor">nor <span class="horia">gara?</span></h2> 
+    </div>
+    <div class="norinfo">
+      <div>
+        <h4>enpresari buruz</h4>
+        <p>
+          ZubietaZinema zinema-aretoen kudeaketan eta zinemaren hedapenean
+          espezializatutako enpresa da. Gure jardueraren helburua ikusleei
+          <strong style="color: rgb(255, 206, 0)"
+            >zinema-esperientzia osoa eskaintzea da</strong
+          >
+          , kalitatea, erosotasuna eta zerbitzu ona oinarri hartuta. Gure
+          ibilbidea zinema publikoarengana
+          <strong style="color: rgb(255, 206, 0)">hurbiltzeko</strong>
+          helburuarekin hasi zen, eta, urteetan zehar, ZubietaZinema hazten eta
+          egokitzen joan da ikusleen
+          <strong style="color: rgb(255, 206, 0)">ohitura</strong> eta behar
+          berrietara. Gaur egun, gure aretoetan azken estreinaldiak eta
+          <strong style="color: rgb(255, 206, 0)"
+            >askotariko zinema-eskaintza</strong
+          >
+          eskaintzen ditugu, publiko desberdinen interesetara egokituz.
+        </p>
+      </div>
+      <div>
+        <h4>gure jarduerak</h4>
+        <p>
+          ZubietaZineman, zinema-aretoen kudeaketa ez da gure jardueraren ardatz
+          bakarra. Ikuslearen esperientzia osoa
+          <strong style="color: rgb(255, 206, 0)">zaintzen</strong> dugu:
+          sarrerak erosteko prozesua, aretoen erosotasuna, irudiaren eta
+          soinuaren
+          <strong style="color: rgb(255, 206, 0)">kalitatea</strong> eta gure
+          langileek eskaintzen duten
+          <strong style="color: rgb(255, 206, 0)">arreta</strong>. Horretarako,
+          gure instalazioak eta ekipamenduak etengabe eguneratzen ditugu,
+          <strong style="color: rgb(255, 206, 0)">teknologia berriak</strong>
+          txertatuz eta
+          <strong style="color: rgb(255, 206, 0)">zerbitzuak</strong> hobetuz.
+        </p>
+        <img
+          class="aretoirudia"
+          src="argazkiak/zubietazinea.png"
+          alt="Zinearen irudia"
+        />
+      </div>
+      <div>
+        <h4>gure konpromisoak</h4>
+        <p>
+          gure konpromisoa argia da:
+          <strong style="color: rgb(255, 206, 0)">kalitatezko</strong>
+          zinema-esperientzia eskaintzea eta gure
+          <strong style="color: rgb(255, 206, 0)">ikusleen konfiantza</strong>
+          epe luzera mantentzea. Horretarako, hiru ardatz nagusitan oinarritzen
+          dugu gure lana:
+        </p>
+        <ul>
+          <li>
+            <strong style="color: rgb(255, 206, 0)">Kalitatea:</strong>
+            proiekzio, soinu eta instalazioen kalitatea zaintzea.
+          </li>
+          <li>
+            <strong style="color: rgb(255, 206, 0)">Berrikuntza:</strong>
+            teknologia eta zerbitzu berriak txertatzea, ikusleen beharretara
+            egokitzeko.
+          </li>
+          <li>
+            <strong style="color: rgb(255, 206, 0)"> Gertutasuna:</strong>
+            bezeroari arreta profesionala eta hurbila eskaintzea.
+          </li>
+        </ul>
+        <img
+          class="argazkialogoa"
+          src="argazkiak/zubietazinemalogoa.png"
+          alt="ZubietaZinema logoa"
+        />
+      </div>
+    </div>
+    <footer class="footer">
       <div class="footer-contenido">
         <!-- EZKERREKO ZATIA -->
-
+        <div class="behekozatia">
         <div class="footer-info">
           <img
             class="footer-logo"
@@ -94,7 +186,7 @@ Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
             </li>
           </ul>
         </div>
-
+        </div>
         <!-- ESKUINEKO ZATIA -->
 
         <div class="footer-derecha">
@@ -117,10 +209,10 @@ Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
               </button>
             </form>
           </div>
-
-          <!-- SARE SOZIALAK -->
-
-          <ul class="footer-redes">
+        </div>
+        <!-- SARE SOZIALAK -->
+        <div class="saresoz">
+            <ul class="footer-redes">
             <li class="footer-redes-item">
               <a class="footer-redes-link" href="https://x.com/">
                 <img
@@ -181,13 +273,13 @@ Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
               </a>
             </li>
           </ul>
-        </div>
+          </div>
       </div>
 
       <div class="footer-bottom">
         <p class="footer-copyright">
           Eskubide guztiak erreserbatuta. Marka komertzial guztiak dagozkien
-        jabeen jabetzakoak dira.
+          jabeen jabetzakoak dira.
         </p>
 
         <div class="footer-enlaces">
@@ -197,7 +289,6 @@ Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
         </div>
       </div>
     </footer>
-
     <input type="checkbox" id="cookie-toggle" class="cookie-toggle" />
 
     <div class="cookie-banner">
@@ -210,5 +301,5 @@ Horretarako, hiru ardatz nagusitan oinarritzen dugu gure lana:</p>
         <label for="cookie-toggle" class="cookie-btn">Onartu</label>
       </div>
     </div>
-</body>
+  </body>
 </html>
