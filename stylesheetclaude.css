@@ -65,6 +65,15 @@ button:hover {
   background-color: rgb(255, 206, 0,0.5);
   
 }
+.ordutegi{
+  display: flex;
+}
+.ordutegi p{
+  border: 1px solid rgb(255, 206, 0);
+  border-radius: 15px;
+  background-color: rgb(255, 206, 0);
+  color: rgb(16, 51, 116);
+}
 
 /*zinemako izenburuari forma eta kolorea ematen*/
 header h1 {
@@ -140,13 +149,10 @@ header h1 {
   display: flex;
   gap: 30px;
   /* Loturen arteko tartea */
-  margin-left: 200px;
+  margin-left: 20%;
   align-items: center;
 }
-nav ul{
-  display: flex;
-  text-align:center ;
-}
+
 nav a {
   padding: 5px;
 }
@@ -746,6 +752,7 @@ nav ul:not(.desplegable-menua) {
   text-align: center;
   gap: 30px;
 }
+
 
 /* Cookie-en oharraren diseinua (pantailaren behekaldean finko) */
 .cookie-banner {
