@@ -82,6 +82,7 @@ header h1 {
   margin-left: 500px;
   margin-right: 500px;
   text-align: center;
+  
 }
 
 #zubieta-oria {
@@ -137,22 +138,50 @@ header h1 {
    ========================================================================== */
 
 /* Zerrendako borobilak kendu */
-#headerra ul {
+nav ul {
   list-style-type: none;
+}
+nav li:nth-child(1){
+}
+details{
+  margin-left: 2%;
+  list-style: none;
+}
+details li{
+  list-style: none;
+}
+.ordutegi p{
+  border: 1px solid rgb(255, 206, 0);
+  background-color: rgb(255, 206, 0);
+  border-radius:10px ;
+  color: rgb(16, 51, 116);
+  
+}
+.ordutegi{
+  display: flex;
+  flex-direction: row;
+  margin-top: -10%;
+  gap: 60%;
+}
+.informazioa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ==========================================================================
    NABIGAZIO-MENUA
    ========================================================================== */
 
-#headerra nav {
-  display: flex;
-  gap: 30px;
-  /* Loturen arteko tartea */
-  margin-left: 20%;
-  align-items: center;
-}
 
+
+nav ul{
+  display: flex;
+  text-align: center;
+  background-color: rgb(16, 51, 116);
+  margin-left:20%;
+  height: 30px;
+}
 nav a {
   padding: 5px;
 }
@@ -161,12 +190,13 @@ nav a {
   text-decoration: none;
 }
 /*hedearreko menutik xagua pasatzean ezberdindu*/
-.menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
+nav .menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
   text-decoration: underline;
   background-color: rgb(255, 206, 0, 0.2);
   color: rgb(16, 51, 116);
   transition: background-color 0.2s;
   border-radius: 5px;
+  margin-top: 100px;
 }
 .pelikuleispan {
   margin-top: 15px;
@@ -178,7 +208,7 @@ nav a {
 .langaldetegi {
   margin-left: 100px;
 }
-.langaldetegi label {
+.langaldetegi label:not(.aukera) {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: bold;
@@ -190,7 +220,7 @@ nav a {
 .langaldetegi div {
   margin-top: 20px;
 }
-.langaldetegi input:not(.bidali):not(.fitxategia) {
+.langaldetegi input:not(.bidali):not(.fitxategia):not(.aukera) {
   margin-top: 20px;
   border: 3px solid color rgb(255, 206, 0);
   background-color: rgb(19, 38, 84);
@@ -200,12 +230,28 @@ nav a {
   text-align: center;
   margin-right: 50px;
 }
+.langaldetegi select{
+  background-color: rgb(19, 38, 84);
+  border-radius: 10px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+.hizkuntzak{
+  margin-top: 10%;
+  margin-left: 1%;
+  display: flex;
+  flex-direction: row;
+}
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .fitxategia {
   margin-left: 15px;
 }
@@ -215,8 +261,8 @@ input[type="number"] {
 }
 
 .langaldetegi .bidali {
-  margin-left: 600px;
-  margin-bottom: 50px;
+  margin-left: 45%;
+  margin-bottom: 5%;
 }
 input[type="file"] {
   border: 3px solid color rgb(255, 206, 0);
@@ -230,7 +276,7 @@ input[type="file"] {
   margin-top: 20px;
 }
 /*esteken dekorazioa zehazten*/
-#headerra nav a:not(.hemen-gaude) {
+ nav a:not(.hemen-gaude) {
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
@@ -240,10 +286,12 @@ input[type="file"] {
    ========================================================================== */
 /*menuaren posizioa jartzen*/
 .menua-ezkerrean {
-  margin-top: 75px;
-  display: flex;
-  text-align: center;
+ 
   text-transform: uppercase;
+  background-color: rgb(16, 51, 116);
+}
+.menua-ezkerrean:nth-child(1){
+  margin-left: 18% ;
 }
 .hemen-gaude {
   text-decoration: underline;
@@ -288,7 +336,7 @@ input[type="file"] {
 /*header barruan, lista barruan dauden esteka guztien kolorea, formatua eta padding-a zehazten*/
 
 /*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
-#headerra li > a:hover:not(.q):not(.hemen-gaude) {
+nav li > a:hover:not(.q):not(.hemen-gaude) {
   background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
   display: block;
@@ -748,7 +796,7 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
   display: none;
 }
 nav ul:not(.desplegable-menua) {
-  display: flex;
+  
   text-align: center;
   gap: 30px;
 }
@@ -792,7 +840,10 @@ nav ul:not(.desplegable-menua) {
   color: rgb(255, 206, 0);
   text-decoration: none;
 }
-
+.pelikuleispant{
+  font-weight: bold;
+  margin: 2%;
+}
 /* Onartzeko botoiaren estiloa */
 .cookie-btn {
   background-color: rgb(16, 51, 116);
@@ -859,7 +910,18 @@ nav ul:not(.desplegable-menua) {
   header {
     position: relative; /* menu desplegatua goiburuaren azpian kokatzeko */
   }
-
+ .langaldetegi select{
+    width: 90%;
+    margin-left: -10%;
+  }
+ .hizkuntzak:not(.ezaukera){
+  display: flex;
+  flex-direction: column;
+  
+ }
+ .ezaukera{
+  margin-left: -25%;
+ }
   /* Goiburuko izenburua: marjina erraldoiak kendu */
   header h1 {
     margin-left: 0;
@@ -867,20 +929,19 @@ nav ul:not(.desplegable-menua) {
     font-size: 30px;
   }
 
-  #headerra nav {
+   nav {
     margin-left: 0;
   }
 
   /* Hamburgesa ikusi */
   .hamburger {
     display: flex;
-
     order: -1;
     margin-right: auto;
   }
 
   /* Zerrenda ezkutatuta hasieran */
-  #headerra .menua-ezkerrean > ul {
+   .menua-ezkerrean > ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -893,7 +954,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* Checkbox-a markatuta dagoenean, zerrenda erakutsi */
-  #headerra .menu-toggle:checked ~ ul {
+  nav .menu-toggle:checked ~ ul {
     display: flex;
   }
 
@@ -962,6 +1023,7 @@ nav ul:not(.desplegable-menua) {
   .saiohasi {
     display: none;
   }
+ 
   .ikonoa_hasiera {
     display: flex;
     order: 3;
@@ -1050,7 +1112,14 @@ nav ul:not(.desplegable-menua) {
     text-align: center;
   }
   .deskirk{
-    display: none;
+  width: 90%;
+  max-width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  resize: vertical;
     
   }
   .deskribl{
@@ -1299,9 +1368,8 @@ nav ul:not(.desplegable-menua) {
   h1 {
     display: none;
   }
-
   /* Fila del menú: solo contiene la hamburguesa (el logo va centrado aparte) */
-  #headerra nav.menua-ezkerrean {
+   nav.menua-ezkerrean {
     margin: 0;
     height: 100px;
     align-items: center;
@@ -1381,7 +1449,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* LISTA DESPLEGADA: justo debajo del header, a todo el ancho */
-  #headerra .menua-ezkerrean > ul {
+  .menua-ezkerrean > ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -1394,7 +1462,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* Checkbox marcado: mostrar la lista */
-  #headerra .menu-toggle:checked ~ ul {
+  nav .menu-toggle:checked ~ ul {
     display: flex;
   }
 
@@ -1508,7 +1576,14 @@ nav ul:not(.desplegable-menua) {
    }
   /* EGIN LAN GUREKIN */
    .deskirk{
-    display: none;
+   width: 90%;
+  max-width: 100%;
+  min-height: 60px;
+  padding: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  resize: vertical;
    }
    .tabletdesk{
     display: block;
