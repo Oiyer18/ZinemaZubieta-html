@@ -73,7 +73,7 @@ header h1 {
   margin-left: 500px;
   margin-right: 500px;
   text-align: center;
-  position: absolute;
+  
 }
 
 #zubieta-oria {
@@ -129,8 +129,10 @@ header h1 {
    ========================================================================== */
 
 /* Zerrendako borobilak kendu */
-#headerra ul {
+nav ul {
   list-style-type: none;
+}
+nav li:nth-child(1){
 }
 details{
   margin-left: 2%;
@@ -162,16 +164,14 @@ details li{
    NABIGAZIO-MENUA
    ========================================================================== */
 
-#headerra nav {
-  display: flex;
-  gap: 30px;
-  /* Loturen arteko tartea */
-  margin-left: 200px;
-  align-items: center;
-}
+
+
 nav ul{
   display: flex;
-  text-align:center ;
+  text-align: center;
+  background-color: rgb(16, 51, 116);
+  margin-left:20%;
+  height: 30px;
 }
 nav a {
   padding: 5px;
@@ -181,7 +181,7 @@ nav a {
   text-decoration: none;
 }
 /*hedearreko menutik xagua pasatzean ezberdindu*/
-.menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
+nav .menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
   text-decoration: underline;
   background-color: rgb(255, 206, 0, 0.2);
   color: rgb(16, 51, 116);
@@ -267,7 +267,7 @@ input[type="file"] {
   margin-top: 20px;
 }
 /*esteken dekorazioa zehazten*/
-#headerra nav a:not(.hemen-gaude) {
+ nav a:not(.hemen-gaude) {
   text-decoration: none;
   color: rgb(255, 206, 0);
 }
@@ -277,9 +277,12 @@ input[type="file"] {
    ========================================================================== */
 /*menuaren posizioa jartzen*/
 .menua-ezkerrean {
-  position: relative; 
-  margin-left: 100px;
+ 
   text-transform: uppercase;
+  background-color: rgb(16, 51, 116);
+}
+.menua-ezkerrean:nth-child(1){
+  margin-left: 18% ;
 }
 .hemen-gaude {
   text-decoration: underline;
@@ -324,7 +327,7 @@ input[type="file"] {
 /*header barruan, lista barruan dauden esteka guztien kolorea, formatua eta padding-a zehazten*/
 
 /*header barruan, lista barruan dauden esteka guztien hover-a ezartzen*/
-#headerra li > a:hover:not(.q):not(.hemen-gaude) {
+nav li > a:hover:not(.q):not(.hemen-gaude) {
   background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
   display: block;
@@ -784,7 +787,7 @@ FOOTER BEHEKO ZATIA (LEGALAK ETA ESTEKAK)
   display: none;
 }
 nav ul:not(.desplegable-menua) {
-  display: flex;
+  
   text-align: center;
   gap: 30px;
 }
@@ -916,7 +919,7 @@ nav ul:not(.desplegable-menua) {
     font-size: 30px;
   }
 
-  #headerra nav {
+   nav {
     margin-left: 0;
   }
 
@@ -928,7 +931,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* Zerrenda ezkutatuta hasieran */
-  #headerra .menua-ezkerrean > ul {
+   .menua-ezkerrean > ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -941,7 +944,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* Checkbox-a markatuta dagoenean, zerrenda erakutsi */
-  #headerra .menu-toggle:checked ~ ul {
+  nav .menu-toggle:checked ~ ul {
     display: flex;
   }
 
@@ -1356,7 +1359,7 @@ nav ul:not(.desplegable-menua) {
     display: none;
   }
   /* Fila del menú: solo contiene la hamburguesa (el logo va centrado aparte) */
-  #headerra nav.menua-ezkerrean {
+   nav.menua-ezkerrean {
     margin: 0;
     height: 100px;
     align-items: center;
@@ -1436,7 +1439,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* LISTA DESPLEGADA: justo debajo del header, a todo el ancho */
-  #headerra .menua-ezkerrean > ul {
+  .menua-ezkerrean > ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -1449,7 +1452,7 @@ nav ul:not(.desplegable-menua) {
   }
 
   /* Checkbox marcado: mostrar la lista */
-  #headerra .menu-toggle:checked ~ ul {
+  nav .menu-toggle:checked ~ ul {
     display: flex;
   }
 
