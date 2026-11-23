@@ -146,13 +146,13 @@ details li{
   background-color: rgb(255, 206, 0);
   border-radius:10px ;
   color: rgb(16, 51, 116);
-  
 }
 .ordutegi{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 15%;
   margin-top: -10%;
-  gap: 60%;
 }
 .informazioa{
   display: flex;
@@ -170,7 +170,7 @@ nav ul{
   display: flex;
   text-align: center;
   background-color: rgb(16, 51, 116);
-  margin-left:20%;
+  justify-content: center;
   height: 30px;
 }
 nav a {
@@ -230,11 +230,17 @@ nav .menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
   margin-right: 50px;
   margin-top: 15px;
 }
-.hizkuntzak{
-  margin-top: 10%;
+.hizkuntzak div{
   margin-left: 1%;
   display: flex;
+  justify-content:flex-start;
+  gap: 5%;
   flex-direction: row;
+}
+.motak{
+  display: flex;
+  flex-direction: row;
+ 
 }
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
@@ -310,6 +316,7 @@ input[type="file"] {
   padding: 8px;
   text-decoration: none;
   color: rgb(255, 206, 0);
+  background-color: rgb(16, 51, 116);
 }
 
 /* Desplegable barruko esteken hover-a */
