@@ -1516,6 +1516,12 @@ nav ul:not(.desplegable-menua) {
     font-weight: bold;
     
   }
+
+iframe {
+  max-width: 360px;
+  max-height: 200px;
+}
+
   .pelikula-info-egunak{
     display: flex;
     flex-direction: column;
