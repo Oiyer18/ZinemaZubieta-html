@@ -1271,14 +1271,12 @@ nav ul:not(.desplegable-menua) {
   .galeria-pelikulak{
     display: flex;
     align-items: center;
-    gap: 20px;
     margin-left: 0px;
    
   }
     .argazkiak2 {
-  width: 45%;
-  max-width: 300px;
-  height: 500px;
+  width: 550px;
+  height: 200px;
   object-fit:contain;
   border-radius: 12px;
   display: flex;
@@ -1287,8 +1285,7 @@ nav ul:not(.desplegable-menua) {
 
 .argazkiak1,
 .argazkiak3 {
-  width: 40%;
-  max-width: 800px;
+  width: 130px;
   height: 740px;
   object-fit: contain;
   border-radius: 12px;
