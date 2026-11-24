@@ -181,7 +181,7 @@ nav a {
   text-decoration: none;
 }
 /*hedearreko menutik xagua pasatzean ezberdindu*/
-nav .menua-ezkerrean a:hover:not(.desplegable-menua):not(.hemen-gaude) {
+nav a:hover:not(.desplegable-menua):not(.hemen-gaude):not(.q) {
   text-decoration: underline;
   background-color: rgb(255, 206, 0, 0.2);
   color: rgb(16, 51, 116);
@@ -338,6 +338,10 @@ nav li > a:hover:not(.q):not(.hemen-gaude) {
   background-color: rgb(255, 206, 0);
   color: rgb(16, 51, 116);
   display: block;
+}
+nav .q:hover:not(.hemen-gaude):not(.desplegablea){
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*=====================NOR GARA ORRIAREN CCS-A============================*/
@@ -510,8 +514,6 @@ h4:not(.erregistro_izenburu) {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 1000px;
-  margin-left: 250px;
 }
 
 /*karrusel baten itxura lortzeko, erdiko argazkiari dimentsio handiagoak jartzen diogu*/
@@ -1260,7 +1262,7 @@ nav ul:not(.desplegable-menua) {
    
   }
     .argazkiak2 {
-  width: 120px;
+  width: 45%;
   max-width: 300px;
   height: 500px;
   object-fit:contain;
@@ -1271,7 +1273,7 @@ nav ul:not(.desplegable-menua) {
 
 .argazkiak1,
 .argazkiak3 {
-  width: 110px;
+  width: 40%;
   max-width: 800px;
   height: 740px;
   object-fit: contain;
@@ -1375,9 +1377,9 @@ nav ul:not(.desplegable-menua) {
   /* HAMBURGUESA (izquierda) */
   .hamburger {
     display: flex;
-    order: -1;
+    
     margin-left: 20px;
-    margin-right: 0;
+   
     position: relative;
     z-index: 1;
   }
@@ -1396,11 +1398,10 @@ nav ul:not(.desplegable-menua) {
 
   /* LOGO (centro): se saca de la fila y se centra respecto al header */
   .ezerakutsi {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+    
+   
+    
+    display: block;
     height: 100px;
     width: 300px;
     min-width: 0;
@@ -1440,10 +1441,7 @@ nav ul:not(.desplegable-menua) {
     display: none;
   }
 
-  .menuaorder {
-    display: flex;
-    align-items: center;
-  }
+ 
 
   /* LISTA DESPLEGADA: justo debajo del header, a todo el ancho */
   .menua-ezkerrean > ul {
@@ -1601,18 +1599,18 @@ nav ul:not(.desplegable-menua) {
    
   }
     .argazkiak2 {
-  width: 300px;
-  max-width: 300px;
-  height: 500px;
-  object-fit:contain;
-  border-radius: 12px;
-  display: flex;
-  
+    width: 500px;
+    
+    height: 500px;
+    object-fit:contain;
+    border-radius: 12px;
+    display: flex;
+    
 }
 
 .argazkiak1,
 .argazkiak3 {
-  width: 210px;
+  width: 80%;
   max-width: 800px;
   height: 740px;
   object-fit: contain;
