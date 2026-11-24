@@ -1377,9 +1377,8 @@ nav ul:not(.desplegable-menua) {
   /* HAMBURGUESA (izquierda) */
   .hamburger {
     display: flex;
-    
-    margin-left: 20px;
-   
+    margin-top: -7%;
+    margin-left: 5%;
     position: relative;
     z-index: 1;
   }
@@ -1395,21 +1394,24 @@ nav ul:not(.desplegable-menua) {
   .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
+ 
   /* LOGO (centro): se saca de la fila y se centra respecto al header */
-  .ezerakutsi {
-    
-   
-    
-    display: block;
-    height: 100px;
+  .ezerakutsi { 
+    display:block;
     width: 300px;
     min-width: 0;
-    margin: 0;
+    justify-content: center;
     object-fit: cover;
     z-index: 0;
+    margin-left:  0;
   }
-
+  .menuaorder{
+    display: flex;
+    
+  }
+  button .saiohasi{
+    position: relative;
+  }
   /* El logo grande del escritorio no se usa en tableta */
   .erakutsi {
     display: none;
@@ -1417,18 +1419,19 @@ nav ul:not(.desplegable-menua) {
 
   /* BOTÓN SAIOA HASI (derecha) */
   .hedgoi {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    height: 100px;
+    justify-content: center;
+    
     display: flex;
     align-items: center;
     z-index: 1;
   }
-
+  .ezerakutsi{
+    margin-top: -7%;
+    margin-left: 20%;
+  }
   .hedgoi button {
-    float: none;
-    margin: 0;
+  margin-bottom: 5%;
+    margin-left: 15%;
     padding: 12px 24px;
   }
 
