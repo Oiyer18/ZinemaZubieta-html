@@ -283,7 +283,6 @@ input[type="file"] {
    ========================================================================== */
 /*menuaren posizioa jartzen*/
 .menua-ezkerrean {
- 
   text-transform: uppercase;
   background-color: rgb(16, 51, 116);
 }
@@ -936,7 +935,8 @@ nav ul:not(.desplegable-menua) {
   .hamburger {
     display: flex;
     order: -1;
-    margin-right: auto;
+    
+      
   }
 
   /* Zerrenda ezkutatuta hasieran */
@@ -961,6 +961,8 @@ nav ul:not(.desplegable-menua) {
   .menua-ezkerrean .desplegablea {
     width: 100%;
     text-align: center;
+    margin-top: 0%;
+    background-color: rgb(16, 51, 116);
   }
 
   .menua-ezkerrean a {
@@ -1022,7 +1024,19 @@ nav ul:not(.desplegable-menua) {
   .saiohasi {
     display: none;
   }
- 
+  .hedgoi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+    gap: 10%;
+  }
+  .hedgoi .ezerakutsi{
+    margin-left: 15%;
+  }
+  .hedgoi button{
+    display: none;
+  }
   .ikonoa_hasiera {
     display: flex;
     order: 3;
@@ -1420,7 +1434,6 @@ nav ul:not(.desplegable-menua) {
   /* BOTÓN SAIOA HASI (derecha) */
   .hedgoi {
     justify-content: center;
-    
     display: flex;
     align-items: center;
     z-index: 1;
@@ -1449,14 +1462,19 @@ nav ul:not(.desplegable-menua) {
   /* LISTA DESPLEGADA: justo debajo del header, a todo el ancho */
   .menua-ezkerrean > ul {
     display: none;
-    position: absolute;
-    top: 100%;
+    position:absolute;
+    top: 40%;
     left: 0;
     right: 0;
     z-index: 100;
     flex-direction: column;
     gap: 0;
+    
+    
+  }
+  .menua-ezkerrean >ul >li{
     background-color: rgb(16, 51, 116);
+    height: 100px;
   }
 
   /* Checkbox marcado: mostrar la lista */
